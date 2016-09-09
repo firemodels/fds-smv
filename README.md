@@ -1,2 +1,2 @@
 # fds-smv
-Redirect for pages.nist.gov
+Web pages for Fire Dynamics Simulator and Smokeview
