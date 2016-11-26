@@ -9,7 +9,6 @@
       function drawChart() {
         var data = google.visualization.arrayToDataTable([
           ['Days since Jan 1, 2016', 'Benchmark Time (s)'],
-[285.98340,2036.900],
 [286.35753,2036.300],
 [287.31078,2034.700],
 [287.42538,2034.100],
@@ -38,7 +37,8 @@
 [326.36085,2009.000],
 [328.50089,1995.200],
 [328.77186,1975.600],
-[328.81706,2012.700],
+[328.81706,2033.800],
+[329.90267,1924.200],
         ]);
 
         var options = {
@@ -62,25 +62,29 @@
 <body>
 <h2>Smokebot Summary</h2>
 <hr align='left'>
-<h3>Status - Thu Nov 24 20:17:24 EST 2016</h3>
-<font color="#00FF00"> Build success!</font><br>
-<a href="https://github.com/firemodels/smv/commit/13217cc8485fa12b07ac6fe7fdbae17981806dbd">Revision: SMV6.4.2-110-g13217cc</a><br>
-Revision date: Thu Nov 24 19:36:34 2016<br>
-Benchmark time: 2012.700 s <br>
+<h3>Status - Fri Nov 25 22:16:42 EST 2016</h3>
+<font color="#FF0000"> Build failure</font><br>
+<a href="https://github.com/firemodels/smv/commit/d2f51fab31bdab6c2400eb81ad86bf5aadc391f9">Revision: SMV6.4.2-117-gd2f51fa</a><br>
+Revision date: Fri Nov 25 21:39:51 2016<br>
+Benchmark time: 1924.200 s <br>
 <h3>Timing History</h3>
 
 <div id="curve_chart" style="width: 500px; height: 300px"></div>
-Mean: 1974 s <br>
-Standard deviation: 63.0 s (3.2 %) <br>
+Mean: 1971 s <br>
+Standard deviation: 63.1 s (3.2 %) <br>
 <h3>Manuals</h3>
 <a href="http://goo.gl/n1Q3WH">Manuals</a>
 
 <h3>Status History</h3>
 
+<p><font color="#FF0000"> Build failure</font><br>
+<a href="https://github.com/firemodels/smv/commit/d2f51fab31bdab6c2400eb81ad86bf5aadc391f9">Revision: SMV6.4.2-117-gd2f51fa</a><br>
+Revision date: Fri Nov 25 21:39:51 2016<br>
+Benchmark time: 1924.200 s <br>
 <p><font color="#00FF00"> Build success!</font><br>
 <a href="https://github.com/firemodels/smv/commit/13217cc8485fa12b07ac6fe7fdbae17981806dbd">Revision: SMV6.4.2-110-g13217cc</a><br>
 Revision date: Thu Nov 24 19:36:34 2016<br>
-Benchmark time: 2012.700 s <br>
+Benchmark time: 2033.800 s <br>
 <p><font color="#FF0000"> Build failure</font><br>
 <a href="https://github.com/firemodels/smv/commit/53e7b7c259ee1aa63afadd8ae24964620178d739">Revision: SMV6.4.2-108-g53e7b7c</a><br>
 Revision date: Thu Nov 24 18:31:29 2016<br>
@@ -193,10 +197,6 @@ Benchmark time: 2034.700 s <br>
 <a href="https://github.com/firemodels/smv/commit/5ce0b1aff9980cdef88e83515b7f6a3bf5bc43fa">Revision: SMV6.4.0-73-g5ce0b1a</a><br>
 Revision date: Thu Oct 13 09:34:51 2016<br>
 Benchmark time: 2036.300 s <br>
-<p><font color="#FF0000"> Build failure and warnings</font><br>
-<a href="https://github.com/firemodels/smv/commit/84d19f398330a96f76359238e17d3346dae6372c">Revision: SMV6.4.0-69-g84d19f3</a><br>
-Revision date: Thu Oct 13 00:36:06 2016<br>
-Benchmark time: 2036.900 s <br>
 <br><br>
 <hr align='left'><br>
 
