@@ -26,13 +26,19 @@
 
 -->
 
-<li>6.4.5 - (build: SMV6.4.5-xx-yyyyyy ) February 14, 2017
+<li>6.4.5 - (build: SMV6.4.5-xx-yyyyyy ) March 8, 2017
 
 <ol>
 <li>enhancement: add option to set foreground and background colors
 <li>enhancement: add option to visualize velocities at device locations as a wind rose
 <li>enhancement: preliminary option to add lighting to smoke visualization
 <li>enhancement: add option to draw a beam detector as a line between two points
+<li>usability: add dialog box controlling windrose view properties
+<li>fix: fix problem with slice and multi-slice menus when duplicate &SLCF entries are present in the fds niput file -
+(<a href="https://github.com/firemodels/smv/issues/231">Smokeview issue 231</a>)
+<li>fix: correct placement of 3d cpu volume rendered smoke (was off by a grid cell)
+<li>fix: fix display of obscuration values and activation state for beam detectors -
+(<a href="https://github.com/firemodels/fds/issues/4732">FDS issue 4732</a>)
 <li>fix: change the way colorbar memory is allocated -
 (<a href="https://github.com/firemodels/smv/issues/207">Smokeview issue 211</a>)
 <li>fix: fix problem with boundary file display when blockages are flush with internal mesh boundaries -
