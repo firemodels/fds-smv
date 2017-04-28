@@ -26,20 +26,29 @@
 
 -->
 
-<li>6.5.0 - (build: SMV6.4.5-xx-yyyyyy ) April 11, 2017
+<li>6.5.0 - (build: SMV6.4.5-xx-yyyyyy ) April 28, 2017
 
 <ol>
+<li>enhancement: speed up smokeview startup time (especially for large cases)
+by reading file names found in the .smv file into a list and searching this list
+(via a binary search) to determine if case files are present.  The startup time for some cases has
+shortened from 3 minutes to 3 seconds.
+<li>enhancement: speed up smokeview startup time by using slice file parameters found
+in the .smv file rather than .sf files
+<li>enhancement: add option to generate quicktime compatible movies on the mac
 <li>enhancement: add option to show cutcell polygons (do not draw interior triangle lines)
 <li>enhancement: add option to set foreground and background colors
-<li>enhancement: add option to visualize velocities at device locations as a wind rose
+<li>enhancement: add option to visualize velocities as a wind rose at device locations 
 <li>enhancement: preliminary option to add lighting to smoke visualization
 <li>enhancement: add option to draw a beam detector as a line between two points
 <li>enhancement: add command line options to read .smv file using file I/O or memory buffers (to speed up start times for large cases)
+<li>usability: add GLSL (GL shading language) version info to .ini file
 <li>usability: use d and f key for ALT and CTRL for systems (Mac running Sierra) that do not support the ALT and CTRL key when using the mouse to control scene motion
 <li>usability: output timings for reading and processing .smv file
 <li>usability: add dialog box controlling windrose view properties
-fix: identify beam detector devices in .smv file correctlycorrect detection of beam detector in .smv file
-fix: fix problem with opening/closing vents that reside on mesh boundaries - 
+<li>fix: make sure immersed boundary/slice file has data before trying to read it
+<li>fix: identify beam detector devices in .smv file correctlycorrect detection of beam detector in .smv file
+<li>fix: fix problem with opening/closing vents that reside on mesh boundaries - 
 (<a href="https://github.com/firemodels/smv/issues/250">Smokeview issue 250</a>)
 <li>fix: fix problem with slice and multi-slice menus when duplicate &SLCF entries are present in the fds niput file -
 (<a href="https://github.com/firemodels/smv/issues/231">Smokeview issue 231</a>)
