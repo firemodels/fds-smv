@@ -26,9 +26,11 @@
 
 -->
 
-<li>6.6.1 - (build: SMV6.6.1-x-yyyy) November 21, 2017 (not released yet)
+<li>6.6.1 - (build: SMV6.6.1-x-yyyy) November 28, 2017 (not released yet)
 
 <ol>
+<li>enhancement: add an option for loading slice, boundary and 3d smoke files incrementally (only those time steps that are
+new since the last time a load has occurred)
 <li>enhancement: add option to edit colorbar by selecting and moving nodes in colorbar path
 <li>enhancement: add MOV (quicktime) to possible movie file types
 
@@ -38,6 +40,8 @@
 <li>usability: implement DEL key when editing text a dialog box
 <li>usability: add quicktime compatibility option to all platforms (not just on the Mac), if quicktime compatibility is set then only allow creation of mp4 files (only ones supported by quicktime)
 
+<li> fix: fix problem with defining scratch directory -
+(<a href="https://github.com/firemodels/fds/issues/5736">FDS issue 5736</a>)
 <li>fix: fix problem causing memory overrun
 <li>fix: fix problem with toggling CAD mode with 'q' key -
 (<a href="https://github.com/firemodels/smv/issues/472">Smokeview issue 472</a>)
