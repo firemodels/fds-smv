@@ -26,14 +26,21 @@
 
 -->
 
-<li>6.6.2 - (not released) December 16, 2017
+<li>6.6.2 - (not released) January 18, 2017
 
 <ol>
-
+<li>usability: add Load All menu entries to Slice and Vector slice menus - 
+(<a href="https://github.com/firemodels/smv/issues/502">Smokeview issue 502</a>)
+<li>usability: add dialog widgets for specifying vent and slice file display offsets
+<li>usability: add a dialog widget for specifying the time offset -
+(<a href="https://github.com/firemodels/fds/issues/5841">FDS issue 5841</a>)
 <li>usability: add option to remove duplicate boundary slices - 
 (<a href="https://github.com/firemodels/smv/issues/486">Smokeview issue 486</a>)
 <li>usability: show slices in solid and gas by default when 3d heat transfer is active -
 (<a href="https://github.com/firemodels/fds/issues/5782">FDS issue 5782</a>)
+fix: prevent a division by zero when computing the scene's aspect ratio
+fix: update slice file bounds when changing whether the slice file is visible within a solid or not  -
+(<a href="https://github.com/firemodels/smv/issues/488">Smokeview issue 488</a>)
 <li>fix: turn off smoke culling on the mac, was  causing crashes
 </ol>
 
