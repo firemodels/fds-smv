@@ -26,9 +26,12 @@
 
 -->
 
-<li>6.6.2 - (not released) January 18, 2017
+<li>6.6.2 - (not released) February 7, 2017
 
 <ol>
+<li>usability: add the gravity vector visibility to state .ini file
+<li>usability: add option to automatically flip colorbar (or not) for slice visibility files -
+(<a href="https://github.com/firemodels/smv/issues/520">Smokeview issue 520</a>)
 <li>usability: add Load All menu entries to Slice and Vector slice menus - 
 (<a href="https://github.com/firemodels/smv/issues/502">Smokeview issue 502</a>)
 <li>usability: add dialog widgets for specifying vent and slice file display offsets
@@ -38,6 +41,19 @@
 (<a href="https://github.com/firemodels/smv/issues/486">Smokeview issue 486</a>)
 <li>usability: show slices in solid and gas by default when 3d heat transfer is active -
 (<a href="https://github.com/firemodels/fds/issues/5782">FDS issue 5782</a>)
+
+<li>fix: corrections to logic coloring data when reloading boundary files -
+(<a href="https://github.com/firemodels/fds/issues/5932">FDS issue 5932</a>)
+<li>fix: fix menu initialization logic for when there are missing slice files -
+(<a href="https://github.com/firemodels/smv/issues/519">Smokeview issue 519</a>)
+<li>fix: fix problem that occurs when the smokeview window is shrunk to a zero width or height
+<li>usability: swap shortcut keys u and U for doing a full or incremental load (u now does a full reload)
+<li> fix: fix cell centered slice and vector slice display for 3d slice files -
+(<a href="https://github.com/firemodels/smv/issues/513">Smokeview issue 513</a>)
+<li>fix : fix ALT d short cut for opening the display dialog box -
+(<a href="https://github.com/firemodels/fds/issues/5945">FDS issue 5945</a>)
+<li>fix: improve display of multiple slice files (remove visual artifacts by improve slice file sorting) -
+(<a href="https://github.com/firemodels/smv/issues/513">Smokeview issue 511</a>)
 <li>fix: prevent a division by zero when computing the scene's aspect ratio
 <li>fix: update slice file bounds when changing whether the slice file is visible within a solid or not  -
 (<a href="https://github.com/firemodels/smv/issues/488">Smokeview issue 488</a>)
