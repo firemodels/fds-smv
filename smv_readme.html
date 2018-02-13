@@ -26,7 +26,21 @@
 
 -->
 
-<li>6.6.2 - (build: <a href="https://github.com/firemodels/smv/releases/tag/SMV6.6.2">SMV6.6.2-1-g97e0403</a>) February 7, 2017
+<li>6.6.3 - (build: not released yet) February 13, 2018
+
+<ol>
+<li>usability: no longer use file modification times to determine if the boundary and slice info files
+(now named chid.binfo and chic.sinfo respectively) are out of date.
+FDS will now overwrite these cache files when it runs a case so that Smokeview will automatically
+recreate them when it first runs a case.
+(<a href="https://github.com/firemodels/fds/issues/5969">FDS issue 5969</a>)
+<li>fix: fix problem with showing and hiding of blockages - 
+(<a href="https://github.com/firemodels/smv/issues/528">Smokeview issue 528</a>)
+<li>fix: corrections to render image option when generating images that are a multiple of the scene image.
+Improve the layout of the render image dialog box.
+</ol>
+
+<li>6.6.2 - (build: <a href="https://github.com/firemodels/smv/releases/tag/SMV6.6.2">SMV6.6.2-1-g97e0403</a>) February 7, 2018
 
 <ol>
 <li>usability: add the gravity vector visibility to state .ini file
