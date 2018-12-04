@@ -30,14 +30,24 @@
 <!--
     comment
 
-<li>6.7.2 - (build: <a href="https://github.com/firemodels/smv/releases/tag/SMV6.7.2">SMV6.7.2-0-xxxxxx</a>) Oct 4, 2018
+<li>6.7.2 - (build: <a href="https://github.com/firemodels/smv/releases/tag/SMV6.7.2">SMV6.7.2-0-xxxxxx</a>) Dec 4, 2018
 
 <ol>
 
+<ul>enhancement: color isosurface using a QUANTITY2 on the &ISOF line
+<ul>enhancement: improve isosurface display by adjusting opacity according to surface orientation with respect to the observer (make surface more opaque when the surface is along the line of sight)
 <li>enhancement: add script command, POSVIEW, for specifying the position and azimuth and elevation view angles
 <li>enhancement: add dialog box entries for specifying the min and max time when displaying wind data as a windrose
 <li>enhancement: add script command to test rgb color values at a specified location
 
+<ul>usability: speed up isosurface file loading
+<ul>usabilitiy: add < and > keyboard shortcuts for increasing/descreaing vector point size
+<ul>usabiliity: move 'max blending' checkbox to top level of 3d smoke dialog box
+<ul>usability: scale light colors in dialog box from 0 to 255 rather than 0.0 to 1.0
+<ul>usability: show geometry triangles outside of the domain by default
+<ul>usability: add dialog box for specitying lighting
+<ul>usability: speed up vector slice file loading by only updating arrays when last vector slice is loaded
+<ul>usabilityi: remove 3d smokeview menus that load more than one 3D smoke type
 <li>usability: add button to make movie dialog box for outputting ffmpeg command used
 <li>usability: simplify output when loading slice files
 <li>usability: change default geometry view option to solid only
@@ -49,6 +59,10 @@
 <li>usability: improve layout of boundary, isosurface and slice file display settings dialog boxes
 <li>usability: simplify 3d smoke dialog box
 
+<ul>fix: fix problem with 'u' key (file reloading) when there are geometry slices
+<ul>fix: add more precision to 360 renderig when mapping images to final image
+<ul>fix: fix 3d smoke size file generation -
+(<a href="https://github.com/firemodels/fds/issues/6899">FDS issue 6899</a>)
 <li>fix: correct colorbar display when using research mode
 <li>fix: change outline view behavior so that outines are always visible -
 (<a href="https://github.com/firemodels/smv/issues/711">Smokeview issue 711</a>)
