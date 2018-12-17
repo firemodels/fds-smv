@@ -1,3 +1,16 @@
+<h2 id="fds-6.7.1-planned-december-2018">FDS 6.7.1 (Planned December, 2018)</h2>
+<ul>
+<li><p>Allow spatial <code>STATISTICS</code> to cross mesh boundaries. This includes quantities like <code>'PATH OBSCURATION'</code> and <code>'LAYER HEIGHT'</code>.</p></li>
+<li><p>Allow combination of spatial and temporal statistics with the parameters <code>SPATIAL_STATISTIC</code> and <code>TEMPORAL_STATISTIC</code>. Deprecate the parameter <code>STATISTICS</code> on the <code>DEVC</code> line.</p></li>
+<li><p>Add a method of extrapolating a temporal max or min to longer time periods. In other words, you can estimate the min or max value of a longer simulation using a statistical (Gumbel) method.</p></li>
+<li><p>Fix bug in solid phase 1-D heat transfer routine when temperature-dependent properties are used.</p></li>
+<li><p>SPATIAL_STATISTIC='AREA' added for gas phase</p></li>
+<li><p>Fix bug for flow loss in an ambient duct node.</p></li>
+<li><p>Add ABSOLUTE PRESSURE and DISSIPATION RATE devices</p></li>
+<li><p>Fix bug when multiple MATL are burning on a SURF</p></li>
+<li><p>Add ABS math control function</p></li>
+<li><p>Add deposition and agglomeration documentation to guides.</p></li>
+</ul>
 <h2 id="fds-6.7.0-june-20-2018">FDS 6.7.0 (June 20, 2018)</h2>
 <ul>
 <li><p><code>SIMULATION_MODE</code> replaces <code>RESEARCH_MODE</code> to control the level of physics. For example, <code>SIMULATION_MODE='DNS'</code>, sets the code to run in direct numerical simulation model. Other options include <code>'LES'</code> (high-fidelity, convergent LES simulations), <code>'VLES'</code> (&quot;very large-eddy simulation&quot; [default] for coarse-grained, practical LES calculations), and finally <code>'SVLES'</code> (&quot;Simple VLES&quot;, makes simplifying physical assumptions, such as constant specific heat ratio, to speed calculations when appropriate).</p></li>
