@@ -26,11 +26,10 @@
 
 -->
 
-
 <!--
     comment
 
-<li>6.7.2 - (build: <a href="https://github.com/firemodels/smv/releases/tag/SMV6.7.2">SMV6.7.2-0-xxxxxx</a>) Dec 4, 2018
+<li>6.7.2 - (build: <a href="https://github.com/firemodels/smv/releases/tag/SMV6.7.2">SMV6.7.2-0-xxxxxx</a>) Dec 14, 2018
 
 <ol>
 
@@ -41,14 +40,18 @@
 <li>enhancement: add script command to test rgb color values at a specified location
 
 <li>usability: load slice files with C (load times are quicker)
+<li>usability: speed up geometry boundary file loading by using C instead of Fortran for I/O
+<li>usability: change geometry/isosurface outline offset from 5 to 1
+<li>usability: add a widget for specifying the isosurface outline offset
+<li>usability: add widgets for controlling boundary file lighting/colors/normals
 <li>usability: speed up isosurface file loading
-<li>usabilitiy: add < and > keyboard shortcuts for increasing/descreaing vector point size
-<li>usabiliity: move 'max blending' checkbox to top level of 3d smoke dialog box
+<li>usability: add < and > keyboard shortcuts for increasing/descreaing vector point size
+<li>usability: move 'max blending' checkbox to top level of 3d smoke dialog box
 <li>usability: scale light colors in dialog box from 0 to 255 rather than 0.0 to 1.0
 <li>usability: show geometry triangles outside of the domain by default
 <li>usability: add dialog box for specitying lighting
 <li>usability: speed up vector slice file loading by only updating arrays when last vector slice is loaded
-<li>usabilityi: remove 3d smokeview menus that load more than one 3D smoke type
+<li>usability: remove 3d smokeview menus that load more than one 3D smoke type
 <li>usability: add button to make movie dialog box for outputting ffmpeg command used
 <li>usability: simplify output when loading slice files
 <li>usability: change default geometry view option to solid only
@@ -60,9 +63,14 @@
 <li>usability: improve layout of boundary, isosurface and slice file display settings dialog boxes
 <li>usability: simplify 3d smoke dialog box
 
-<li> fix: fix problem loading particles files when minimum load time > 0.0
+<li>fix: fix problem loading particles files when minimum load time > 0.0
 <li>fix: fix script recording so that file load when recording a script - 
 (<a href="https://github.com/firemodels/smv/issues/765">Smokeview issue 765</a>)
+<li>fix: correct location of call of routine that outputs slice data 
+<li>fix: correct implementation of PLOT3DPROPS script command
+<li>fix: turn off isosurface multi-threading when running a script
+<li>fix: corrections to isosurface norm computation
+<li>fix: scale vectors when computing cross product to prevent underflow
 <li>fix: fix problem with 'u' key (file reloading) when there are geometry slices
 <li>fix: add more precision to 360 renderig when mapping images to final image
 <li>fix: fix 3d smoke size file generation -
