@@ -26,6 +26,21 @@
 
 -->
 
+<li>6.7.6 - (build: <a href="https://github.com/firemodels/smv/releases/tag/SMV6.7.6">SMV6.7.6-0-gxxxx</a>) Mar xx, 2019
+
+<ol>
+<ul>usability: only load soot if opacity is non-zero
+<li>usability: use spherical cooridinates to represent light direction (azimuth, elevation),
+correction to update light routine
+<li>fix: fix evacuation file loading -
+(<a href="https://github.com/firemodels/fds/issues/7233">FDS issue 7233</a>)
+<li>fix: fix problem reloading particles
+<li>fix: fix problem with colorbar label scaling when the minimum value is close to but not equal to zero
+<li>fix: fix problem reading in RAMP keeyword - don't allocate memory when there arn't any ramps
+<li>fix: fix problem with particle coloring when smokeview objects are used -
+(<a href="https://github.com/firemodels/fds/issues/7169">FDS issue 7169</a>)
+</ol>
+
 <li>6.7.5 - (build: <a href="https://github.com/firemodels/smv/releases/tag/SMV6.7.5">SMV6.7.5-0-g92555b8</a>) Feb 12, 2019
 
 <ol>
@@ -2029,3 +2044,45 @@ Gaithersburg, MD 20899
 
 </BODY>
 </HTML>
+0412677 smokeview source: add logic to color evacuation 'particles' only when last evacuation file is loaded - addresses FDS issue 7233
+3cb285b smokeview source: make the html and smokeview window size the same size
+880e506 smokeview source: fix problem with loading particles in a smokeview script
+5d33c36 smokeview source: mask html option in release version
+055e888 smokeview source: remove unused variable
+f8c07dd smokeview source: add time step index to html file name
+0c25e40 smokeview source: clean up GetFileName code - make clearer
+0879a8f commit test
+26d76df commit test
+804ca90 test commit
+57b0336 smokeview source: fixes to html conversion, add menu (under Options>Render) for html convertion
+9302f69 smokeview source: remove unused variables, remove extra offset computation
+115aff1 smokeview source: add dialog widget for outputting html file
+f8e7c7d smokeview source: preliminary routine to copy slice file data to a html file
+571d5f0 smokeview source: add missing pp_HTML directive
+bf47c7c smokeview source: when converting to html, scale geometry the same way as blockages
+e83543d smokeview source: turn off glui update when graphics is turned off
+620541c smokeview source: fix loop indices in html conversino routine
+e2c8c05 smokeview source: output geometry info to an html file
+581e092 smokeview source: when using -html, scale geometry between -0.75 and 0.75 (to be consistent with html template being used)
+0fd4cb5 smokeview source: turn off graphics when using -html option, exit smokview before entering glut loop when using -html option
+39e7556 smokeview source: remove unused variables causing compiler warnings
+fc5bcf3 smokeview source: add a -html option to create a web page of the smokeview scene, code clean up - replace variables for a couple of extensions with string constants
+68a3ddd smokview source: minor formatting edit when loading 3d smoke/fire files
+abadbe0 smokeview source: change 3d smoke cutoff to 1
+6b1a47a smokeview source: only load soot if opacity > 2.0 (possible opacity 0.0 to 255 )
+fd3ac2b smokeview source: correction to particle load timing
+02d7bf7 Merge remote-tracking branch 'origin/master'
+10fb4e8 smokeview source: fix problem reloading particles
+9e7f777 smv vv: force smokebot run to verify input file changes
+bc5ac3b smv vv: force smokebot run to test input file corrections made in earlier commit
+9e4c171 smokeview source: add some particle file debug output (surrounded within a pp_PARTDEBUG directive)
+54568c0 smokeview source: remove unused warning messages (for objects)
+7139a3f smokeview source: fix problem with colorbar label scaling when the min value is close to but not equal to zero
+1d024fb Merge remote-tracking branch 'firemodels/master'
+e72ea78 smokeview source: add LIGHTING parameter to .ini file
+bdbc093 smokeview source: add visualization of light directions
+c5ec871 smokeview source: use spherical cooridinates to represent light direction (azimuth, elevation), correction to update light routine
+c483f3c smokeview source: fix problem reading in RAMP keeyword - don't allocate memory when there arn't any ramps
+87b06b8 Merge remote-tracking branch 'firemodels/master'
+59f5b90 smokeview source: fix problem with particle coloring when smokeview objects are used - addresses fds issue 7169
+c4447b7 smokeview source: remove code that reads and writes particle histograms - not used any more
