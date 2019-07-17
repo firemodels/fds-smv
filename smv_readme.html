@@ -23,12 +23,22 @@
 <!--
     comment
 
-<li>6.7.7 - (build: <a href="https://github.com/firemodels/smv/releases/tag/SMV6.7.7">SMV6.7.7-0-gxxxx</a>) May 6, 2019
+<li>6.7.7 - (build: <a href="https://github.com/firemodels/smv/releases/tag/SMV6.7.7">SMV6.7.7-0-gxxxx</a>) July 16, 2019
 <ol>
+<ul>usability: add option to load particle files in parallel
+<li>usability: speed up particle loading by using bound data precompute by fds and reducing the number of memory allocations used for particles
+<li>usability: improve display of fire/soot/co2, combine soot and co2 using respective opacities
+<li>usability: add option to increase fire opacity (as a multiple of soot opacity) when drawing smoke and fire
+<li>usability: add ALT X short cut for shrinking all dialogs
+<li>usability: add smokeview script keywords for rendering to html
 <li>usability: corrections and improvements to smoke/fire/co2 visualization
 <li>usability: add option to specify the initial position and speed for a circular tour - 
 (<a href="https://github.com/firemodels/fds/issues/7306">FDS issue 7306</a>)
 <li>usability: add option to offset geometry
+<li>fix: skip over malformed PL3D lines to prevent startup crashes - 
+(<a href="https://github.com/firemodels/fds/issues/7454">FDS issue 7454</a>)
+<li>fix: fix problem with undefined variable when opening a boundary file - addresses smokeview issue 827
+(<a href="https://github.com/firemodels/smv/issues/827">Smokeview issue 827</a>)
 <li>fix: keep the view of a clipped scene from being reset when the scene is moved -
 (<a href="https://github.com/firemodels/fds/issues/7315">FDS issue 7315</a>)
 <li>fix: correction to boundary file bound computation when structure and non-structured boundary files exist
