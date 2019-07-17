@@ -9,12 +9,6 @@
       function drawChart() {
         var data = google.visualization.arrayToDataTable([
           ['Days since Jan 1, 2016', 'Benchmark Time (s)'],
-[1236.59378,13271.300],
-[1237.60412,13225.900],
-[1239.60916,13282.000],
-[1240.24190,13249.600],
-[1245.69418,12955.500],
-[1246.59937,12913.200],
 [1247.39645,13140.400],
 [1249.43425,13174.800],
 [1250.68886,13406.600],
@@ -39,6 +33,12 @@
 [1279.35959,15741.800],
 [1280.31776,15653.200],
 [1281.65994,15542.900],
+[1284.61173,15527.900],
+[1285.26458,15559.600],
+[1285.66365,15714.300],
+[1286.45583,15759.400],
+[1287.43793,15800.700],
+[1288.63831,15581.600],
         ]);
 
         var options = {
@@ -62,22 +62,52 @@
 <body>
 <h2>Firebot Summary</h2>
 <hr align='left'>
-<h3>Status - Mon Jul  8 03:58:14 EDT 2019</h3>
-<font color="#00FF00"> Build success!</font><br>
-<a href="https://github.com/firemodels/fds/commit/37149319bbed3aa555a2749b514144a95a95ebcd">Revision: FDS6.7.1-705-g3714931</a><br>
-Revision date: Fri Jul 5 16:50:19 2019<br>
-Benchmark time: 15542.900 s <br>
+<h3>Status - Tue Jul 16 09:07:43 EDT 2019</h3>
+<font color="#FF00FF"> Build success with warnings</font><br>
+<a href="https://github.com/firemodels/fds/commit/45179a1aa80447bac18ab96c97a50639a9984e39">Revision: FDS6.7.1-755-g45179a1</a><br>
+Revision date: Fri Jul 12 16:19:10 2019<br>
+Benchmark time: 15581.600 s <br>
 Host: blaze <br>
 <h3>Timing History</h3>
 
 <div id="curve_chart" style="width: 500px; height: 300px"></div>
-Mean: 13758 s <br>
-Standard deviation: 872.9 s (6.3 %) <br>
+Mean: 14259 s <br>
+Standard deviation: 1075.0 s (7.5 %) <br>
 <h3>Manuals</h3>
 <a href="http://goo.gl/n1Q3WH">Manuals</a>
 
 <h3>Status History</h3>
 
+<p><font color="#FF00FF"> Build success with warnings</font><br>
+<a href="https://github.com/firemodels/fds/commit/45179a1aa80447bac18ab96c97a50639a9984e39">Revision: FDS6.7.1-755-g45179a1</a><br>
+Revision date: Fri Jul 12 16:19:10 2019<br>
+Benchmark time: 15581.600 s <br>
+Host: blaze <br>
+<p><font color="#00FF00"> Build success!</font><br>
+<a href="https://github.com/firemodels/fds/commit/1d38f44fe5ebebeb519422543c083909d9c6796f">Revision: FDS6.7.1-745-g1d38f44</a><br>
+Revision date: Thu Jul 11 11:30:38 2019<br>
+Benchmark time: 15800.700 s <br>
+Host: blaze <br>
+<p><font color="#00FF00"> Build success!</font><br>
+<a href="https://github.com/firemodels/fds/commit/be77824c8a842d4eeef7c67f0efda7dc5152e316">Revision: FDS6.7.1-743-gbe77824</a><br>
+Revision date: Wed Jul 10 11:56:24 2019<br>
+Benchmark time: 15759.400 s <br>
+Host: blaze <br>
+<p><font color="#00FF00"> Build success!</font><br>
+<a href="https://github.com/firemodels/fds/commit/f3872b137cc975d8c6c1d979ec2d3b027bfafed1">Revision: FDS6.7.1-727-gf3872b1</a><br>
+Revision date: Tue Jul 9 16:55:40 2019<br>
+Benchmark time: 15714.300 s <br>
+Host: blaze <br>
+<p><font color="#00FF00"> Build success!</font><br>
+<a href="https://github.com/firemodels/fds/commit/0ccccc7d64e15fd6b647e2ca16e1081c361056fb">Revision: FDS6.7.1-724-g0ccccc7</a><br>
+Revision date: Tue Jul 9 07:21:00 2019<br>
+Benchmark time: 15559.600 s <br>
+Host: blaze <br>
+<p><font color="#FF0000"> Build failure</font><br>
+<a href="https://github.com/firemodels/fds/commit/1d941ac9c0e0774346fda880025adec9db2cd256">Revision: FDS6.7.1-722-g1d941ac</a><br>
+Revision date: Mon Jul 8 15:40:54 2019<br>
+Benchmark time: 15527.900 s <br>
+Host: blaze <br>
 <p><font color="#00FF00"> Build success!</font><br>
 <a href="https://github.com/firemodels/fds/commit/37149319bbed3aa555a2749b514144a95a95ebcd">Revision: FDS6.7.1-705-g3714931</a><br>
 Revision date: Fri Jul 5 16:50:19 2019<br>
@@ -197,36 +227,6 @@ Host: blaze <br>
 <a href="https://github.com/firemodels/fds/commit/dccf6eb2db447f4e52a72d4bd1d4be0c2baf3b26">Revision: FDS6.7.1-492-gdccf6eb</a><br>
 Revision date: Sat Jun 1 10:30:54 2019<br>
 Benchmark time: 13140.400 s <br>
-Host: blaze <br>
-<p><font color="#FF0000"> Build failure and warnings</font><br>
-<a href="https://github.com/firemodels/fds/commit/e2ceb1ec0fac17d5d139059ed0c78cb69ccb0e99">Revision: FDS6.7.1-488-ge2ceb1e</a><br>
-Revision date: Fri May 31 15:23:06 2019<br>
-Benchmark time: 12913.200 s <br>
-Host: blaze <br>
-<p><font color="#00FF00"> Build success!</font><br>
-<a href="https://github.com/firemodels/fds/commit/d3435c16366ca2d067d51a49b6f7b6f16593d6fd">Revision: FDS6.7.1-459-gd3435c1</a><br>
-Revision date: Thu May 30 17:39:38 2019<br>
-Benchmark time: 12955.500 s <br>
-Host: blaze <br>
-<p><font color="#00FF00"> Build success!</font><br>
-<a href="https://github.com/firemodels/fds/commit/5c0149698c9ee39e643048f6e5cdafa8e84199b3">Revision: FDS6.7.1-444-g5c01496</a><br>
-Revision date: Sat May 25 06:48:21 2019<br>
-Benchmark time: 13249.600 s <br>
-Host: blaze <br>
-<p><font color="#00FF00"> Build success!</font><br>
-<a href="https://github.com/firemodels/fds/commit/d8f41b4acd472b63ae28d7ea4f11fc6a12ce2387">Revision: FDS6.7.1-442-gd8f41b4</a><br>
-Revision date: Fri May 24 15:37:12 2019<br>
-Benchmark time: 13282.000 s <br>
-Host: blaze <br>
-<p><font color="#00FF00"> Build success!</font><br>
-<a href="https://github.com/firemodels/fds/commit/311af2d035a0682b934133b46ed08d1962c94e2b">Revision: FDS6.7.1-431-g311af2d</a><br>
-Revision date: Wed May 22 15:29:56 2019<br>
-Benchmark time: 13225.900 s <br>
-Host: blaze <br>
-<p><font color="#FF00FF"> Build success with warnings</font><br>
-<a href="https://github.com/firemodels/fds/commit/06acece6b7c84c5b3b440613284c8c91f81fc9eb">Revision: FDS6.7.1-426-g06acece</a><br>
-Revision date: Tue May 21 15:15:03 2019<br>
-Benchmark time: 13271.300 s <br>
 Host: blaze <br>
 <br><br>
 <hr align='left'><br>
