@@ -9,10 +9,6 @@
       function drawChart() {
         var data = google.visualization.arrayToDataTable([
           ['Days since Jan 1, 2016', 'Benchmark Time (s)'],
-[1397.52302,1987.400],
-[1397.52302,2042.700],
-[1399.71396,2036.400],
-[1403.98104,2049.500],
 [1407.56789,2033.400],
 [1407.60000,2058.100],
 [1411.30937,2097.200],
@@ -39,6 +35,10 @@
 [1451.33275,2038.400],
 [1458.93975,2001.800],
 [1458.95230,2075.600],
+[1459.45245,2086.100],
+[1459.62540,2108.700],
+[1459.67618,2023.100],
+[1459.88797,2053.900],
         ]);
 
         var options = {
@@ -62,22 +62,42 @@
 <body>
 <h2>Smokebot Summary</h2>
 <hr align='left'>
-<h3>Status - Mon Dec 30 07:01:42 EST 2019</h3>
+<h3>Status - Tue Dec 31 05:55:26 EST 2019</h3>
 <font color="#00FF00"> Build success!</font><br>
-<a href="https://github.com/firemodels/smv/commit/fd53340212d1292bf75cf6efc59ca75523ec9288">Revision: SMV6.7.12-26-gfd53340</a><br>
-Revision date: Sun Dec 29 22:51:19 2019<br>
-Benchmark time: 2075.600 s <br>
+<a href="https://github.com/firemodels/smv/commit/a60ed5b063a614c601361c1a098642e10e7bc1bd">Revision: SMV6.7.12-38-ga60ed5b</a><br>
+Revision date: Mon Dec 30 21:18:41 2019<br>
+Benchmark time: 2053.900 s <br>
 Host: blaze <br>
 <h3>Timing History</h3>
 
 <div id="curve_chart" style="width: 500px; height: 300px"></div>
-Mean: 1960 s <br>
-Standard deviation: 365.6 s (18.7 %) <br>
+Mean: 1965 s <br>
+Standard deviation: 366.9 s (18.7 %) <br>
 <h3>Manuals</h3>
 <a href="http://goo.gl/n1Q3WH">Manuals</a>
 
 <h3>Status History</h3>
 
+<p><font color="#00FF00"> Build success!</font><br>
+<a href="https://github.com/firemodels/smv/commit/a60ed5b063a614c601361c1a098642e10e7bc1bd">Revision: SMV6.7.12-38-ga60ed5b</a><br>
+Revision date: Mon Dec 30 21:18:41 2019<br>
+Benchmark time: 2053.900 s <br>
+Host: blaze <br>
+<p><font color="#00FF00"> Build success!</font><br>
+<a href="https://github.com/firemodels/smv/commit/c135cfdbd9b6c4433f3eeb82196285ea67fe48b7">Revision: SMV6.7.12-34-gc135cfd</a><br>
+Revision date: Mon Dec 30 16:13:42 2019<br>
+Benchmark time: 2023.100 s <br>
+Host: blaze <br>
+<p><font color="#00FF00"> Build success!</font><br>
+<a href="https://github.com/firemodels/smv/commit/146cef4cb7fc10d31f0d0d49324867c37e0928ea">Revision: SMV6.7.12-32-g146cef4</a><br>
+Revision date: Mon Dec 30 15:00:35 2019<br>
+Benchmark time: 2108.700 s <br>
+Host: blaze <br>
+<p><font color="#00FF00"> Build success!</font><br>
+<a href="https://github.com/firemodels/smv/commit/b17b9fcd7d3f443150547e53ae2d2eb622258998">Revision: SMV6.7.12-30-gb17b9fc</a><br>
+Revision date: Mon Dec 30 10:51:32 2019<br>
+Benchmark time: 2086.100 s <br>
+Host: blaze <br>
 <p><font color="#00FF00"> Build success!</font><br>
 <a href="https://github.com/firemodels/smv/commit/fd53340212d1292bf75cf6efc59ca75523ec9288">Revision: SMV6.7.12-26-gfd53340</a><br>
 Revision date: Sun Dec 29 22:51:19 2019<br>
@@ -207,26 +227,6 @@ Host: blaze <br>
 <a href="https://github.com/firemodels/smv/commit/8394a97f12c3a2b4307e6a7c7bc17757b6c604a2">Revision: SMV6.7.10-21-g8394a97</a><br>
 Revision date: Mon Nov 4 23:32:42 2019<br>
 Benchmark time: 2049.500 s <br>
-Host: blaze <br>
-<p><font color="#00FF00"> Build success!</font><br>
-<a href="https://github.com/firemodels/smv/commit/1091b8e760a2371bc8a94f187cb169dafa8fc079">Revision: SMV6.7.10-11-g1091b8e</a><br>
-Revision date: Thu Oct 31 18:08:07 2019<br>
-Benchmark time: 2036.400 s <br>
-Host: blaze <br>
-<p><font color="#00FF00"> Build success!</font><br>
-<a href="https://github.com/firemodels/smv/commit/afb65f9bf5324d5de5c99cead2973288d35df902">Revision: SMV6.7.10-10-gafb65f9</a><br>
-Revision date: Tue Oct 29 13:33:09 2019<br>
-Benchmark time: 2042.700 s <br>
-Host: blaze <br>
-<p><font color="#00FF00"> Build success!</font><br>
-<a href="https://github.com/firemodels/smv/commit/6e3de4ecaef80ebeb4a57589884ea7d410e84ab1">Revision: SMV6.7.10-8-g6e3de4e</a><br>
-Revision date: Tue Oct 29 07:32:19 2019<br>
-Benchmark time: 1987.400 s <br>
-Host: blaze <br>
-<p><font color="#FF0000"> Build failure</font><br>
-<a href="https://github.com/firemodels/smv/commit/8f828ebe2366cb5a27e82970dcec030e400c9568">Revision: SMV6.7.10-0-g8f828eb</a><br>
-Revision date: Sun Oct 20 22:23:31 2019<br>
-Benchmark time: 1995.000 s <br>
 Host: blaze <br>
 <br><br>
 <hr align='left'><br>
