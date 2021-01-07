@@ -9,7 +9,6 @@
       function drawChart() {
         var data = google.visualization.arrayToDataTable([
           ['Days since Jan 1, 2016', 'Benchmark Time (s)'],
-[1789.71427,26192.000],
 [1790.36606,26262.000],
 [1791.36295,26267.000],
 [1792.66932,26082.000],
@@ -39,6 +38,7 @@
 [1828.51537,17295.400],
 [1830.44609,17192.800],
 [1831.67460,17259.600],
+[1832.59043,17165.900],
         ]);
 
         var options = {
@@ -62,23 +62,29 @@
 <body>
 <h2>Firebot Summary</h2>
 <hr align='left'>
-<h3>Status - Wed Jan  6 04:41:14 EST 2021</h3>
-<font color="#00FF00"> Build success!</font><br>
-<a href="https://github.com/firemodels/fds/commit/e0360815d3746d7a88c392360b03b7c1a9f34cf0">FDS Revision: FDS6.7.5-749-ge0360815d </a><br>
-FDS Revision date: Tue Jan 5 16:11:26 2021<br>
-<a href="https://github.com/firemodels/smv/commit/b8aafb9a638afcddd062544d70d9b89eeb1502a9">SMV Revision: SMV6.7.15-558-gb8aafb9a6 </a><br>
-Benchmark time: 17259.600 s <br>
+<h3>Status - Thu Jan  7 04:44:35 EST 2021</h3>
+<font color="#FF0000"> Build failure and warnings</font><br>
+<a href="https://github.com/firemodels/fds/commit/6c6557d0f4a60508abd4065bf0515e410697f272">FDS Revision: FDS6.7.5-757-g6c6557d0f </a><br>
+FDS Revision date: Wed Jan 6 14:10:14 2021<br>
+<a href="https://github.com/firemodels/smv/commit/39cec0e36d0d7058533133a21b84cfa680b15e6e">SMV Revision: SMV6.7.15-574-g39cec0e36 </a><br>
+Benchmark time: 17165.900 s <br>
 Host: blaze <br>
 <h3>Timing History</h3>
 
 <div id="curve_chart" style="width: 500px; height: 300px"></div>
-Mean: 19726 s <br>
-Standard deviation: 3942.8 s (20.0 %) <br>
+Mean: 19425 s <br>
+Standard deviation: 3778.9 s (19.5 %) <br>
 <h3>Manuals</h3>
 <a href="http://goo.gl/n1Q3WH">Manuals</a>
 
 <h3>Status History</h3>
 
+<p><font color="#FF0000"> Build failure and warnings</font><br>
+<a href="https://github.com/firemodels/fds/commit/6c6557d0f4a60508abd4065bf0515e410697f272">FDS Revision: FDS6.7.5-757-g6c6557d0f </a><br>
+FDS Revision date: Wed Jan 6 14:10:14 2021<br>
+<a href="https://github.com/firemodels/smv/commit/39cec0e36d0d7058533133a21b84cfa680b15e6e">SMV Revision: SMV6.7.15-574-g39cec0e36 </a><br>
+Benchmark time: 17165.900 s <br>
+Host: blaze <br>
 <p><font color="#00FF00"> Build success!</font><br>
 <a href="https://github.com/firemodels/fds/commit/e0360815d3746d7a88c392360b03b7c1a9f34cf0">FDS Revision: FDS6.7.5-749-ge0360815d </a><br>
 FDS Revision date: Tue Jan 5 16:11:26 2021<br>
@@ -252,12 +258,6 @@ Host: blaze <br>
 FDS Revision date: Sat Nov 28 08:45:10 2020<br>
 <a href="https://github.com/firemodels/smv/commit/01405a3d5a2e0ccd4d05837834f93beb3e987f52">SMV Revision: SMV6.7.15-107-g01405a3d5 </a><br>
 Benchmark time: 26219.000 s <br>
-Host: blaze <br>
-<p><font color="#FF0000"> Build failure and warnings</font><br>
-<a href="https://github.com/firemodels/fds/commit/4ea769f266f0487ca6e249594378c6321484d455">FDS Revision: FDS6.7.5-582-g4ea769f26 </a><br>
-FDS Revision date: Fri Nov 27 16:03:50 2020<br>
-<a href="https://github.com/firemodels/smv/commit/01405a3d5a2e0ccd4d05837834f93beb3e987f52">SMV Revision: SMV6.7.15-107-g01405a3d5 </a><br>
-Benchmark time: 26082.000 s <br>
 Host: blaze <br>
 <br><br>
 <hr align='left'><br>
