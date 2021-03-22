@@ -25,8 +25,15 @@
     comment
 
 
-<li>6.7.16 - (build: <a href="https://github.com/firemodels/smv/releases/tag/SMV6.7.16">SMV6.7.16-0-gxxxx</a>) February 11, 2021
+<li>6.7.16 - (build: <a href="https://github.com/firemodels/smv/releases/tag/SMV6.7.16">SMV6.7.16-0-gxxxx</a>) March 21, 2021
 <ol>
+<li>fix problem with SETVIEWPOINT script command
+<li>fix bug in texture display on retangular geometric surfaces
+<li>fix: correction to min/max depth computation for geometry cases
+<li>preserve time state when reloading all file types (if simulation is paused, it will remain pasued after a reload)
+<li>add an option to display a a bounding box around a device - 
+(<a href="https://github.com/firemodels/smv/issues/1095">Smokeview issue 1095</a>)
+<li>fixes to LOADSLICERENDER script command for geometry slices
 <li>add a command line option, -make_movie, to open a movie generating dialog box
 <li>add an option to draw geometry bounding boxes in place of geometry
 <li>add option to time average device and hrrpuv data
@@ -59,7 +66,7 @@ which can be downloaded and installed at <a href="https://www.xquartz.org/">www.
 <li>usability: use p for switching particle view types, P for switching plot3d file types
 <li>usability: move colorbar dialog box from display to file/data
 <li>usability: add 'T' short cut for toggling time bar label besteen s and h:m:s
-<li>usabiliety: improve display of colorbar labels, add dialog control for specifying the number of digits displayed
+<li>usability: improve display of colorbar labels, add dialog control for specifying the number of digits displayed
 <li>usability: add dialog widgets for controlling terrain visibility, line width, vetex size and offset
 <li>usability: smokeview source: remove 'T' shortcut for toggling texture coloring - now always use texture coloring for displaying slice and boundary files
 <li>usability: improve terrain surface visualization
