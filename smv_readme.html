@@ -25,35 +25,45 @@
     comment
 
 
-<li>6.7.16 - (build: <a href="https://github.com/firemodels/smv/releases/tag/SMV6.7.16">SMV6.7.16-0-gxxxx</a>) March 21, 2021
+<li>6.7.16 - (build: <a href="https://github.com/firemodels/smv/releases/tag/SMV6.7.16">SMV6.7.16-0-gxxxx</a>) March 29, 2021
 <ol>
-<li>fix problem with SETVIEWPOINT script command
-<li>fix bug in texture display on retangular geometric surfaces
-<li>fix: correction to min/max depth computation for geometry cases
-<li>preserve time state when reloading all file types (if simulation is paused, it will remain pasued after a reload)
-<li>add an option to display a a bounding box around a device - 
+<li>enhancement: add option to draw cface geometry
+<li>enhancement: add an option to display a bounding box around a device - 
 (<a href="https://github.com/firemodels/smv/issues/1095">Smokeview issue 1095</a>)
-<li>fixes to LOADSLICERENDER script command for geometry slices
-<li>add a command line option, -make_movie, to open a movie generating dialog box
-<li>add an option to draw geometry bounding boxes in place of geometry
-<li>add option to time average device and hrrpuv data
-<li>add 'p'shortcut for switching between device quantities (if plot3d or particles are not loaded)
-<li>refresh dialog boxes periocally on linux and osx versions to avoid visual artifacts
-<li>improve and simplify data bounds dialog boxes
-<li>improve computation of near and far clipping planes
-<li>add default viewpoints for each side of the scene.  Make the view from the top the default for terrain cases
-<li>reduce time required to input terrain textures. display first terrain texture by deafult
-<li>add a command line option to ignore slice files
-<li>add 2D plots for for hrrpuv and device values.  These plots may be shown by toggling the 'A' key
-<li>improve timebar layout
-<li>add 2D histogram plots of particle, slice, boundary and PLOT3D values
-<li>add degree symbol to Mac version of smokeview
-<li>add zoom widget to circular tour dialog box
-<li>add -1x command line for the Mac smokeview to use the original scaling
-<li>fix a problem with the CELL_CENTERED option of the LOADSLCF script command
-<li>add widgest for controlling frame skipping when drawing 3d smoke
-<li>allow one to create custom profiles by saving smokeview.ini to the .smokeview direcory in the user's home directtory
-<li>add option to set the number of digits displayed in the colorbar
+<li>enhancement: add a command line option, -make_movie, to open a movie generating dialog box
+<li>enhancement: add an option to draw geometry bounding boxes in place of geometry
+<li>enhancement: add option to time average device and hrrpuv data
+<li>enhancement: add 'p'shortcut for switching between device quantities (if plot3d or particles are not loaded)
+<li>enhancement: add default viewpoints for each side of the scene.  Make the view from the top the default for terrain cases
+<li>enhancement: add 2D plots for for hrrpuv and device values.  These plots may be shown by toggling the 'A' key
+<li>enhancement: add 2D histogram plots of particle, slice, boundary and PLOT3D values
+<li>enhancement: add degree symbol to Mac version of smokeview
+
+<li>usability: add an option to open a case contained with a directory
+<li>usability: use cfaces geometry file when drawing geometry boundary files
+<li>usability: add option to force fixed point colorbar labels
+<li>usability: preserve time state when reloading all file types (if simulation is paused, it will remain pasued after a reload)
+<li>usability: refresh dialog boxes periocally on linux and osx versions to avoid visual artifacts
+<li>usability: improve and simplify data bounds dialog boxes
+<li>usability: improve computation of near and far clipping planes
+<li>usability: reduce time required to input terrain textures. display first terrain texture by deafult
+<li>usabiity: add a command line option to ignore slice files
+<li>usabiity: improve timebar layout
+<li>usability: add zoom widget to circular tour dialog box
+<li>usability: add -1x command line for the Mac smokeview to use the original scaling
+<li>usablity: add widgest for controlling frame skipping when drawing 3d smoke
+<li>usability: allow one to create custom profiles by saving smokeview.ini to the .smokeview direcory in the user's home directtory
+<li>usability: add option to set the number of digits displayed in the colorbar
+
+<li>fix: fix problem with setting geometry slice bounds
+<li>fix: fix cell centered slice bound computation
+<li>fix: fix near clipping plane computation to improve visualization when objects are close to the observer
+<li>fix: fix transparency for cface geometry display
+<li>fix: fix problem with SETVIEWPOINT script command
+<li>fix: fix bug in texture display on retangular geometric surfaces
+<li>fix: fix: correction to min/max depth computation for geometry cases
+<li>fix: fixes to LOADSLICERENDER script command for geometry slices
+<li>fix: fix a problem with the CELL_CENTERED option of the LOADSLCF script command
 </ol>
 -->
 
