@@ -25,7 +25,7 @@
     comment
 
 
-<li>6.7.16 - (build: <a href="https://github.com/firemodels/smv/releases/tag/SMV6.7.16">SMV6.7.16-0-gxxxx</a>) March 29, 2021
+<li>6.7.16 - (build: <a href="https://github.com/firemodels/smv/releases/tag/SMV6.7.16">SMV6.7.16-0-gxxxx</a>) April 13, 2021
 <ol>
 <li>enhancement: add option to draw cface geometry
 <li>enhancement: add an option to display a bounding box around a device - 
@@ -39,6 +39,12 @@
 <li>enhancement: add 2D histogram plots of particle, slice, boundary and PLOT3D values
 <li>enhancement: add degree symbol to Mac version of smokeview
 
+<li>usability: change fire 50% opacity depth to 3.0 m, fire temperature cutoff to 600 C
+<li>usability: smokeview source: don't show timebar when drawing bounding boxes when moving the scene
+<li>usability: draw scene outline and obst bounding box outline wwhen moving scene
+<li>usability: add option ('B' keyboard shortcut, -big command line option) to hide scene and data when moving scene - for big cases
+<li>usability: read and classify geometry files in parallel
+<li>usability: connect geometry colors to cface drawing
 <li>usability: add an option to open a case contained with a directory
 <li>usability: use cfaces geometry file when drawing geometry boundary files
 <li>usability: add option to force fixed point colorbar labels
@@ -55,6 +61,9 @@
 <li>usability: allow one to create custom profiles by saving smokeview.ini to the .smokeview direcory in the user's home directtory
 <li>usability: add option to set the number of digits displayed in the colorbar
 
+<li>fix: correct geometry triangle location classification (interior, extieror to fds domain)
+<li>fix: fix to bounding box display when drawing cfaces
+<li>fix: compute domain bounds using mesh bounds AND geometry bounds in order to fix near/far clipping plane problem
 <li>fix: fix problem with setting geometry slice bounds
 <li>fix: fix cell centered slice bound computation
 <li>fix: fix near clipping plane computation to improve visualization when objects are close to the observer
