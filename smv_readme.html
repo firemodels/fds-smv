@@ -25,7 +25,7 @@
     comment
 
 
-<li>6.7.16 - (build: <a href="https://github.com/firemodels/smv/releases/tag/SMV6.7.16">SMV6.7.16-0-gxxxx</a>) April 13, 2021
+<li>6.7.16 - (build: <a href="https://github.com/firemodels/smv/releases/tag/SMV6.7.16">SMV6.7.16-0-gxxxx</a>) April 30, 2021
 <ol>
 <li>enhancement: add option to draw cface geometry
 <li>enhancement: add an option to display a bounding box around a device - 
@@ -39,6 +39,7 @@
 <li>enhancement: add 2D histogram plots of particle, slice, boundary and PLOT3D values
 <li>enhancement: add degree symbol to Mac version of smokeview
 
+<li>usability: show blockages when portions of boundary files disappear due to data chopping
 <li>usability: change fire 50% opacity depth to 3.0 m, fire temperature cutoff to 600 C
 <li>usability: smokeview source: don't show timebar when drawing bounding boxes when moving the scene
 <li>usability: draw scene outline and obst bounding box outline wwhen moving scene
@@ -61,6 +62,14 @@
 <li>usability: allow one to create custom profiles by saving smokeview.ini to the .smokeview direcory in the user's home directtory
 <li>usability: add option to set the number of digits displayed in the colorbar
 
+<li>fix: fix to LOADFILES script command when loading particles
+<li>fix: correct truncation view for particle, boundary, slice and plot3d files
+<li>fix: memoery allocation for fed isosurfaces
+<li>fix: fix memory leak when loading/unloading particle, slice, boundary, isosurface and plot3d files
+<li>fix: fix ALT d and ALT w shortcuts 
+<li>fix: fix to I shortcut for toggling slice file visibility in blockages
+<li>fix: fix to 'H' keyboard shortcut for toggling slice and vecteor slice visibility
+<li>fix: fix to 'b' shortcut for toggline boundary file visibility
 <li>fix: correct geometry triangle location classification (interior, extieror to fds domain)
 <li>fix: fix to bounding box display when drawing cfaces
 <li>fix: compute domain bounds using mesh bounds AND geometry bounds in order to fix near/far clipping plane problem
