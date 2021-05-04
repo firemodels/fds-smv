@@ -25,7 +25,7 @@
     comment
 
 
-<li>6.7.16 - (build: <a href="https://github.com/firemodels/smv/releases/tag/SMV6.7.16">SMV6.7.16-0-gxxxx</a>) April 30, 2021
+<li>6.7.16 - (build: <a href="https://github.com/firemodels/smv/releases/tag/SMV6.7.16">SMV6.7.16-0-gxxxx</a>) May 3, 2021
 <ol>
 <li>enhancement: add option to draw cface geometry
 <li>enhancement: add an option to display a bounding box around a device - 
@@ -39,6 +39,7 @@
 <li>enhancement: add 2D histogram plots of particle, slice, boundary and PLOT3D values
 <li>enhancement: add degree symbol to Mac version of smokeview
 
+<li>usability: add option to specify number of grid location digits displayed
 <li>usability: show blockages when portions of boundary files disappear due to data chopping
 <li>usability: change fire 50% opacity depth to 3.0 m, fire temperature cutoff to 600 C
 <li>usability: smokeview source: don't show timebar when drawing bounding boxes when moving the scene
@@ -62,6 +63,10 @@
 <li>usability: allow one to create custom profiles by saving smokeview.ini to the .smokeview direcory in the user's home directtory
 <li>usability: add option to set the number of digits displayed in the colorbar
 
+<li>fix: fix: fix to cell centered fed slice generation
+<li>fix: fix problem when using a script command to load cell centered slice files
+<li>fix: fix vector slice display when slices are on a mesh boundary -
+(<a href="https://github.com/firemodels/smv/issues/1141">Smokeview issue 1141</a>)
 <li>fix: fix to LOADFILES script command when loading particles
 <li>fix: correct truncation view for particle, boundary, slice and plot3d files
 <li>fix: memoery allocation for fed isosurfaces
