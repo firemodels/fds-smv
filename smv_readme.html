@@ -26,101 +26,118 @@
 
 
 <li>6.7.16 - (build: <a href="https://github.com/firemodels/smv/releases/tag/SMV6.7.16">SMV6.7.16-0-gxxxx</a>) May 3, 2021
+
+<br><strong>Enhancements</strong><br>
 <ol>
-<li>enhancement: add option to draw cface geometry
-<li>enhancement: add an option to display a bounding box around a device - 
+<li>add option to draw cface geometry
+<li>add an option to display a bounding box around a device - 
 (<a href="https://github.com/firemodels/smv/issues/1095">Smokeview issue 1095</a>)
-<li>enhancement: add a command line option, -make_movie, to open a movie generating dialog box
-<li>enhancement: add an option to draw geometry bounding boxes in place of geometry
-<li>enhancement: add option to time average device and hrrpuv data
-<li>enhancement: add 'p'shortcut for switching between device quantities (if plot3d or particles are not loaded)
-<li>enhancement: add default viewpoints for each side of the scene.  Make the view from the top the default for terrain cases
-<li>enhancement: add 2D plots for for hrrpuv and device values.  These plots may be shown by toggling the 'A' key
-<li>enhancement: add 2D histogram plots of particle, slice, boundary and PLOT3D values
-<li>enhancement: add degree symbol to Mac version of smokeview
+<li>add a command line option, -make_movie, to open a movie generating dialog box
+<li>add an option to draw geometry bounding boxes in place of geometry
+<li>add option to time average device and hrrpuv data
+<li>add 'p'shortcut for switching between device quantities (if plot3d or particles are not loaded)
+<li>add default viewpoints for each side of the scene.  Make the view from the top the default for terrain cases
+<li>add 2D plots for for hrrpuv and device values.  These plots may be shown by toggling the 'A' key
+<li>add 2D histogram plots of particle, slice, boundary and PLOT3D values
+<li>add degree symbol to Mac version of smokeview
+</ol>
 
-<li>usability: add option to specify number of grid location digits displayed
-<li>usability: show blockages when portions of boundary files disappear due to data chopping
-<li>usability: change fire 50% opacity depth to 3.0 m, fire temperature cutoff to 600 C
-<li>usability: smokeview source: don't show timebar when drawing bounding boxes when moving the scene
-<li>usability: draw scene outline and obst bounding box outline wwhen moving scene
-<li>usability: add option ('B' keyboard shortcut, -big command line option) to hide scene and data when moving scene - for big cases
-<li>usability: read and classify geometry files in parallel
-<li>usability: connect geometry colors to cface drawing
-<li>usability: add an option to open a case contained with a directory
-<li>usability: use cfaces geometry file when drawing geometry boundary files
-<li>usability: add option to force fixed point colorbar labels
-<li>usability: preserve time state when reloading all file types (if simulation is paused, it will remain pasued after a reload)
-<li>usability: refresh dialog boxes periocally on linux and osx versions to avoid visual artifacts
-<li>usability: improve and simplify data bounds dialog boxes
-<li>usability: improve computation of near and far clipping planes
-<li>usability: reduce time required to input terrain textures. display first terrain texture by deafult
-<li>usabiity: add a command line option to ignore slice files
-<li>usabiity: improve timebar layout
-<li>usability: add zoom widget to circular tour dialog box
-<li>usability: add -1x command line for the Mac smokeview to use the original scaling
-<li>usablity: add widgest for controlling frame skipping when drawing 3d smoke
-<li>usability: allow one to create custom profiles by saving smokeview.ini to the .smokeview direcory in the user's home directtory
-<li>usability: add option to set the number of digits displayed in the colorbar
+<strong>Usability</strong><br>
+<ol>
+<li>add option to specify number of grid location digits displayed
+<li>show blockages when portions of boundary files disappear due to data chopping
+<li>change fire 50% opacity depth to 3.0 m, fire temperature cutoff to 600 C
+<li>don't show timebar when drawing bounding boxes when moving the scene
+<li>draw scene outline and obst bounding box outline wwhen moving scene
+<li>add option ('B' keyboard shortcut, -big command line option) to hide scene and data when moving scene - for big cases
+<li>read and classify geometry files in parallel
+<li>connect geometry colors to cface drawing
+<li>add an option to open a case contained with a directory
+<li>use cfaces geometry file when drawing geometry boundary files
+<li>add option to force fixed point colorbar labels
+<li>preserve time state when reloading all file types (if simulation is paused, it will remain pasued after a reload)
+<li>refresh dialog boxes periocally on linux and osx versions to avoid visual artifacts
+<li>improve and simplify data bounds dialog boxes
+<li>improve computation of near and far clipping planes
+<li>reduce time required to input terrain textures. display first terrain texture by default
+<li>add a command line option to ignore slice files
+<li>improve timebar layout
+<li>add zoom widget to circular tour dialog box
+<li>add -1x command line for the Mac smokeview to use the original scaling
+<li>add widgest for controlling frame skipping when drawing 3d smoke
+<li>allow one to create custom profiles by saving smokeview.ini to the .smokeview direcory in the user's home directtory
+<li>add option to set the number of digits displayed in the colorbar
+</ol>
 
-<li>fix: fix: fix to cell centered fed slice generation
-<li>fix: fix problem when using a script command to load cell centered slice files
-<li>fix: fix vector slice display when slices are on a mesh boundary -
+<strong>Fixes</strong><br>
+<ol>
+<li>fix to cell centered fed slice generation
+<li>fix problem when using a script command to load cell centered slice files
+<li>fix vector slice display when slices are on a mesh boundary -
 (<a href="https://github.com/firemodels/smv/issues/1141">Smokeview issue 1141</a>)
-<li>fix: fix to LOADFILES script command when loading particles
-<li>fix: correct truncation view for particle, boundary, slice and plot3d files
-<li>fix: memoery allocation for fed isosurfaces
-<li>fix: fix memory leak when loading/unloading particle, slice, boundary, isosurface and plot3d files
-<li>fix: fix ALT d and ALT w shortcuts 
-<li>fix: fix to I shortcut for toggling slice file visibility in blockages
-<li>fix: fix to 'H' keyboard shortcut for toggling slice and vecteor slice visibility
-<li>fix: fix to 'b' shortcut for toggline boundary file visibility
-<li>fix: correct geometry triangle location classification (interior, extieror to fds domain)
-<li>fix: fix to bounding box display when drawing cfaces
-<li>fix: compute domain bounds using mesh bounds AND geometry bounds in order to fix near/far clipping plane problem
-<li>fix: fix problem with setting geometry slice bounds
-<li>fix: fix cell centered slice bound computation
-<li>fix: fix near clipping plane computation to improve visualization when objects are close to the observer
-<li>fix: fix transparency for cface geometry display
-<li>fix: fix problem with SETVIEWPOINT script command
-<li>fix: fix bug in texture display on retangular geometric surfaces
-<li>fix: fix: correction to min/max depth computation for geometry cases
-<li>fix: fixes to LOADSLICERENDER script command for geometry slices
-<li>fix: fix a problem with the CELL_CENTERED option of the LOADSLCF script command
+<li>fix to LOADFILES script command when loading particles
+<li>correct truncation view for particle, boundary, slice and plot3d files
+<li>fix memory allocation for fed isosurfaces
+<li>fix memory leak when loading/unloading particle, slice, boundary, isosurface and plot3d files
+<li>fix ALT d and ALT w shortcuts 
+<li>fix to I shortcut for toggling slice file visibility in blockages
+<li>fix to 'H' keyboard shortcut for toggling slice and vecteor slice visibility
+<li>fix to 'b' shortcut for toggline boundary file visibility
+<li>correct geometry triangle location classification (interior, extieror to fds domain)
+<li>fix to bounding box display when drawing cfaces
+<li>compute domain bounds using mesh bounds AND geometry bounds in order to fix near/far clipping plane problem
+<li>fix problem with setting geometry slice bounds
+<li>fix cell centered slice bound computation
+<li>fix near clipping plane computation to improve visualization when objects are close to the observer
+<li>fix transparency for cface geometry display
+<li>fix problem with SETVIEWPOINT script command
+<li>fix bug in texture display on retangular geometric surfaces
+<li>correction to min/max depth computation for geometry cases
+<li>fixes to LOADSLICERENDER script command for geometry slices
+<li>fix a problem with the LOADSLCF CELL_CENTERED script option
 </ol>
 -->
 
 <li>6.7.15 - (build: <a href="https://github.com/firemodels/smv/releases/tag/SMV6.7.15">SMV6.7.15-0-g4fa68dd</a>) August 10, 2020
 
-<ol>
-<li>The Mac/OSX version of Smokeview requires the XQuartz library 
+<br>The Mac/OSX version of Smokeview requires the XQuartz library 
 which can be downloaded and installed at <a href="https://www.xquartz.org/">www.xquartz.org</a>.
-<li>enhancement: add LOADSLICERENDER keyword to load a slice file and render one time step at a time, for very large cases
-<li>usability: use p for switching particle view types, P for switching plot3d file types
-<li>usability: move colorbar dialog box from display to file/data
-<li>usability: add 'T' short cut for toggling time bar label besteen s and h:m:s
-<li>usability: improve display of colorbar labels, add dialog control for specifying the number of digits displayed
-<li>usability: add dialog widgets for controlling terrain visibility, line width, vetex size and offset
-<li>usability: smokeview source: remove 'T' shortcut for toggling texture coloring - now always use texture coloring for displaying slice and boundary files
-<li>usability: improve terrain surface visualization
-<li>usability: add a show/hide menu for terrain textures and geometry,
-check whether terrain texture images have any transparent pixels
-<li>usability: implement overlaying of partially transparent textures
-<li>usability: add option to specify color on the &GEOM line
-<li>usability: add support for averaging geomettry slice data -
-(<a href="https://github.com/firemodels/fds/issues/8117">FDS issue 8117</a>)
 
-<li>fix: fix problem with duplicate slice menus -
+<br><strong>Enhancements</strong><br>
+<ol>
+<li>add LOADSLICERENDER keyword to load a slice file and render one time step at a time, for very large cases
+</ol>
+
+<strong>Usability</strong><br>
+<ol>
+<li>use p for switching particle view types, P for switching plot3d file types
+<li>move colorbar dialog box from display to file/data
+<li>add 'T' short cut for toggling time bar label besteen s and h:m:s
+<li>improve display of colorbar labels, add dialog control for specifying the number of digits displayed
+<li>add dialog widgets for controlling terrain visibility, line width, vetex size and offset
+<li>smokeview source: remove 'T' shortcut for toggling texture coloring - now always use texture coloring for displaying slice and boundary files
+<li>improve terrain surface visualization
+<li>add a show/hide menu for terrain textures and geometry,
+check whether terrain texture images have any transparent pixels
+<li>implement overlaying of partially transparent textures
+<li>add option to specify color on the &GEOM line
+<li>add support for averaging geomettry slice data -
+(<a href="https://github.com/firemodels/fds/issues/8117">FDS issue 8117</a>)
+</ol>
+
+<strong>Fixes</strong><br>
+<ol>
+<li>fix problem with duplicate slice menus -
 (<a href="https://github.com/firemodels/smv/issues/1004">Smokeview issue 1004</a>)
-<li>fix: fix problem with geometry boundary file loading
-<li>fix: fix problem with colorbar placement (was abutting againste the righ side of window)
-<li>fix: fix crash occurring when casename.smv file does not exist
-<li>fix: fix problem with terrain vector slice display
-<li>fix: fix problem with vector slice menu display -
+<li>fix problem with geometry boundary file loading
+<li>fix problem with colorbar placement (was abutting againste the righ side of window)
+<li>fix crash occurring when casename.smv file does not exist
+<li>fix problem with terrain vector slice display
+<li>fix problem with vector slice menu display -
 (<a href="https://github.com/firemodels/fds/issues/8362">FDS issue 8362</a>)
-<li>fix: fix problem with terrain slice menu generation
-<li>fix: fix probem with transparency in geometry case
-<li>fix: correct error computing geometry bounding box
+<li>fix problem with terrain slice menu generation
+<li>fix probem with transparency in geometry case
+<li>correct error computing geometry bounding box
 </ol>
 
 <li>6.7.14 - (build: <a href="https://github.com/firemodels/smv/releases/tag/SMV6.7.14">SMV6.7.14-0-g568693b6a</a>) March 5, 2020
