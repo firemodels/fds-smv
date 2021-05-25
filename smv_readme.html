@@ -25,11 +25,11 @@
     comment
 
 
-<li>6.7.16 - (build: <a href="https://github.com/firemodels/smv/releases/tag/SMV6.7.16">SMV6.7.16-0-gxxxx</a>) May 3, 2021
+<li>6.7.16 - (build: <a href="https://github.com/firemodels/smv/releases/tag/SMV6.7.16">SMV6.7.16-0-gxxxx</a>) May 25, 2021
 
 <br><strong>Enhancements</strong><br>
 <ol>
-<li>add option to draw cface geometry
+<li>add option to draw cface geometry and cface normal vectors
 <li>add an option to display a bounding box around a device - 
 (<a href="https://github.com/firemodels/smv/issues/1095">Smokeview issue 1095</a>)
 <li>add a command line option, -make_movie, to open a movie generating dialog box
@@ -44,6 +44,8 @@
 
 <strong>Usability</strong><br>
 <ol>
+<li>add 'n' keyboard shortcut for showing cface normal vectors
+<li>add 'O' keyboard shortcut for toggling outline/shaded geometry view
 <li>add option to specify number of grid location digits displayed
 <li>show blockages when portions of boundary files disappear due to data chopping
 <li>change fire 50% opacity depth to 3.0 m, fire temperature cutoff to 600 C
@@ -71,6 +73,8 @@
 
 <strong>Fixes</strong><br>
 <ol>
+<li>fix crash when invoking smokeview without arguments
+<li>fix problem when using script command to load cell centered slice files
 <li>fix to cell centered fed slice generation
 <li>fix problem when using a script command to load cell centered slice files
 <li>fix vector slice display when slices are on a mesh boundary -
