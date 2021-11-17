@@ -26,37 +26,43 @@
 
 <li>6.7.18 - (build: <a href="https://github.com/firemodels/smv/releases/tag/SMV6.7.18"> SMV6.7.18-0-gdce043cd7-release</a>) Novvember 17, 2021
 
+<br><strong>Ehancements</strong><br>
+<ol>
+<li>add option to output values when drawing slice files
+</ol>
+
+<br><strong>Usability</strong><br>
+<ol>
+<ul>remove clipping limits - allow any value to be set for min and max clipping planes -
+(<a href="https://github.com/firemodels/fds/issues/10037">FDS issue 10037</a>)
+<li>add option to view scene from any tour position, a generalization of a previous option that only allowed you to view the scene from keyframes
+<li>turn on outline view when showing cfaces
+<li>improve slice and vector slice menus
+<li>add widget for setting number of slice file value digits
+<li>implement option to draw or not draw geometry insdide and outside of the FDS domain for terrain geometries
+</ol>
+
 <br><strong>Fixes</strong><br>
 <ol>
-<li>enhancement: add option to output values when drawing slice files
-
-<ul>usability: remove clipping limits - allow any value to be set for min and max clipping planes -
-(<a href="https://github.com/firemodels/fds/issues/10037">FDS issue 10037</a>)
-<li>usability: add option to view scene from any tour position, a generalization of a previous option that only allowed you to view the scene from keyframes
-<li>usability: turn on outline view when showing cfaces
-<li>usability: improve slice and vector slice menus
-<li>usability: add widget for setting number of slice file value digits
-<li>usability: implement option to draw or not draw geometry insdide and outside of the FDS domain for terrain geometries
-
-<li>fix:  always keep hrrrpuv and temperature smoke cutoff widgets enabled
-<li>fix:  make tour point distribution uniform
-<li>fix: fix to 360 rendering when rendered in a script
-<li>fix: fix to load slice render script command when generating 360 images
-<li>fix: save render resolution type to ini file
-<li>fix: fix crash caused by TICKS ini keyword -
+<li>always keep hrrrpuv and temperature smoke cutoff widgets enabled
+<li>make tour point distribution uniform
+<li>fix to 360 rendering when rendered in a script
+<li>fix to load slice render script command when generating 360 images
+<li>save render resolution type to ini file
+<li>fix crash caused by TICKS ini keyword -
 (<a href="https://github.com/firemodels/smv/issues/1210">Smokeview issue 1210</a>)
-<li>fix: fixes to geometry dialog box
-<li>fix: fixes to geometry terrain image display
-<li>fix: fix elevation coloring for terrain geometries
-<li>fix: fix crash when viewing an OBST terrain case
-<li>fix: fix problem when cases have embedded meshes
-<li>fix: corrections to geometry vector slice files
-<li>fix: fix geometry boundary file display
-<li>fix: fix problem with ector slice coloring
-<li>fix: fix when reloading slice files from the bound dialog box
-<li>fix: fix parsing of SHOWEXTREMEDATA .ini parameter -
+<li>fixes to geometry dialog box
+<li>fixes to geometry terrain image display
+<li>elevation coloring for terrain geometries
+<li>fix crash when viewing an OBST terrain case
+<li>fix problem when cases have embedded meshes
+<li>corrections to geometry vector slice files
+<li>fix geometry boundary file display
+<li>fix problem with vector slice coloring
+<li>fix when reloading slice files from the bound dialog box
+<li>fix parsing of SHOWEXTREMEDATA .ini parameter -
 (<a href="https://github.com/firemodels/smv/issues/1173">Smokeview issue 1173</a>)
-<li>fix: fix crash when unloading geometry vector slice files
+<li>fix crash when unloading geometry vector slice files
 </ol>
 
 <li>6.7.17 - (build: <a href="https://github.com/firemodels/smv/releases/tag/SMV6.7.17"> SMV6.7.17-0-g45b228fe9-release</a>) June 2, 2021
