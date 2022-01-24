@@ -23,10 +23,35 @@
 <!--
     comment
 
-<p><li>6.7.19 - (build: <a href="https://github.com/firemodels/smv/releases/tag/SMV6.7.19"> SMV6.7.19-0-gxxxx-release</a>) November 23, 2021
+<p><li>6.7.19 - (build: <a href="https://github.com/firemodels/smv/releases/tag/SMV6.7.19"> SMV6.7.19-0-gxxxx-release</a>) January 24, 2022
 
-<br><strong>Fixes</strong><br>
+<br><strong>Usability</strong><br>
 <ol>
+<li>don't show terrain and OBSTs at the same time
+<li>add script commands SETSLICEBOUNDS and SETBOUNDBOUNDS for setting slice file and boundry file bounds
+<li>allow blank quantity labels for V2_ part and PLOT3D ini keywords
+<li>allow the scene to be viewed at arbitrary times
+<li>improve colorbar label display
+</ol>
+
+<strong>Fixes</strong><br>
+<ol>
+<li>select and drag the timebar proportional to time not the time frame
+<li>improve the strategy for which part of an agl terrain slice and terrain vector slice to show
+<li>make vector slice file unloading more efficient
+<li>draw blockages if boundary files are not drawn due to time bounds parameters
+<li>fix to slice frame skipping
+<li>fix to PLOT3D load menu
+<li>correction to terrain 3d surface drawing when there are multiple horizontal rows of meshes
+<li>fix to PLOT3D display when using non-default variables <em>i.e.</em> not using U-VEL, V-VEL W-VEL <em>etc.</em>
+(<a href="https://github.com/firemodels/smv/issues/1231">Smokeview issue 1231</a>)
+<li>fix problem with restoring split the colorbar state from ini file settings -
+(<a href="https://github.com/firemodels/smv/issues/1229">Smokeview issue 1229</a>)
+<li>fix to clipping plane when toggling between viewpoints -
+(<a href="https://github.com/firemodels/fds/issues/100770">FDS issue 100770</a>)
+<li>fix to the CYCLE button for viewpoint dialog box -
+(<a href="https://github.com/firemodels/fds/issues/100769">FDS issue 10079</a>)
+
 <li>fix to clipping plane dialog box clipping values when toggling between viewpoints -
 (<a href="https://github.com/firemodels/fds/issues/10070">FDS issue 100770</a>)
 <li>fix to CYCLE button for viewpoint dialog box, add CYCLE buttons for 'user' and 'default' viewpoints -
