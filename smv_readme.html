@@ -23,7 +23,7 @@
 <!--
     comment
 
-<p><li>6.7.19 - (build: <a href="https://github.com/firemodels/smv/releases/tag/SMV6.7.19"> SMV6.7.19-0-gxxxx-release</a>) January 24, 2022
+<p><li>6.7.19 - (build: <a href="https://github.com/firemodels/smv/releases/tag/SMV6.7.19"> SMV6.7.19-0-gxxxx-release</a>) Mar 4, 2022
 
 <br><strong>Usability</strong><br>
 <ol>
@@ -32,6 +32,11 @@
 <li>allow blank quantity labels for V2_ part and PLOT3D ini keywords
 <li>allow the scene to be viewed at arbitrary times
 <li>improve colorbar label display
+<li>improve terrain vector slice drawing, make it consistent with terrain slice drawing
+<li>allow arbitrary names for 3d soot files (extinction coef > 0.0)
+<li>use mass extinction coefficient for setting smoke opacity
+<li>make vertical offset consistent in terrain slice and terrain vector slice routines
+<li>select and drag time bar proportional to time not time frame
 </ol>
 
 <strong>Fixes</strong><br>
@@ -56,6 +61,14 @@
 (<a href="https://github.com/firemodels/fds/issues/10070">FDS issue 100770</a>)
 <li>fix to CYCLE button for viewpoint dialog box, add CYCLE buttons for 'user' and 'default' viewpoints -
 (<a href="https://github.com/firemodels/fds/issues/10069">FDS issue 10069</a>)
+<li>remove extraneous widget for setting slice colorbar digits and associated variables  - addresses FDS issue 10344
+(<a href="https://github.com/firemodels/fds/issues/10344">FDS issue 10344</a>)
+<li>fix check (use >= instead of > ) for determinging whether terrain elevation is within a mesh
+<li>fix to terrain slice drawing, compute a complete terain for each mesh from terrain given by fds
+<li>improve near and far depth plane computation
+<li>corrections to terrain agl slice display
+<li>fixes to plot3d colorbar label display - 
+(<a href="https://github.com/firemodels/fds/issues/10176">FDS issue 10176</a>)
 </ol>
 
 -->
