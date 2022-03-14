@@ -29,15 +29,14 @@
 <ol>
 <li>parallelize 3D smoke input
 <li>don't show terrain and OBSTs at the same time
-<li>add script commands SETSLICEBOUNDS and SETBOUNDBOUNDS for setting slice file and boundry file bounds
+<li>add script commands SETSLICEBOUNDS and SETBOUNDBOUNDS for setting slice and boundry file bounds
 <li>allow quantity labels to be blank for V2_ part and PLOT3D ini keywords
 <li>allow the scene to be viewed at arbitrary times
 <li>improve colorbar label display
-<li>improve terrain vector slice drawing, make it consistent with terrain slice drawing
-<li>allow arbitrary names for 3d soot files (extinction coef > 0.0)
+<li>make terrain vector slice terrain slice drawing consistent
+<li>allow arbitrary names for 3d soot files (files with extinction coef > 0.0)
 <li>use mass extinction coefficient for setting smoke opacity
-<li>make vertical offset consistent when displaying terrain slice and terrain vector slices
-<li>select and drag the time bar proportional to time not time frame
+<li>select and drag the time bar proportional to time not the time frame
 </ol>
 
 <strong>Fixes</strong><br>
@@ -45,26 +44,20 @@
 <li>improve the strategy for which part of an agl terrain slice and terrain vector slice to show
 <li>make vector slice file unloading more efficient
 <li>draw blockages if boundary files are not drawn due to time bounds parameters
-<li>fix to slice frame skipping
-<li>fix to PLOT3D load menu
-<li>correction to terrain 3d surface drawing when there are multiple horizontal rows of meshes
+<li>fix to terrain 3d surface drawing when there are multiple horizontal rows of meshes
 <li>fix to PLOT3D display when using non-default variables <em>i.e.</em> not using U-VEL, V-VEL W-VEL <em>etc.</em>
 (<a href="https://github.com/firemodels/smv/issues/1231">Smokeview issue 1231</a>)
-<li>fix problem with restoring split the colorbar state from ini file settings -
+<li>fix problem with restoring split colorbar state from ini file settings -
 (<a href="https://github.com/firemodels/smv/issues/1229">Smokeview issue 1229</a>)
 <li>fix to clipping plane when toggling between viewpoints -
 (<a href="https://github.com/firemodels/fds/issues/100770">FDS issue 100770</a>)
-<li>fix to the CYCLE button for viewpoint dialog box -
+<li>fix to the CYCLE button in the viewpoint dialog box -
 (<a href="https://github.com/firemodels/fds/issues/100769">FDS issue 10079</a>)
-<li>fix to clipping plane dialog box clipping values when toggling between viewpoints -
-(<a href="https://github.com/firemodels/fds/issues/10070">FDS issue 100770</a>)
-<li>fix to CYCLE button for viewpoint dialog box, add CYCLE buttons for 'user' and 'default' viewpoints -
-(<a href="https://github.com/firemodels/fds/issues/10069">FDS issue 10069</a>)
-<li>remove extraneous widget for setting slice colorbar digits and associated variables  - addresses FDS issue 10344
+<li>remove extraneous widget for setting slice colorbar digits and associated variables  -
 (<a href="https://github.com/firemodels/fds/issues/10344">FDS issue 10344</a>)
 <li>fix check (use >= instead of > ) for determinging whether terrain elevation is within a mesh
 <li>improve near and far depth plane computation
-<li>fixes to plot3d colorbar label display - 
+<li>fix to PLOT3D colorbar label display - 
 (<a href="https://github.com/firemodels/fds/issues/10176">FDS issue 10176</a>)
 </ol>
 
@@ -576,68 +569,78 @@ correction to update light routine
 
 <p><li>6.6.5 - (build: <a href="https://github.com/firemodels/smv/releases/tag/SMV6.6.5">SMV6.6.5-0-g008cf1d</a>) June 19, 2018
 
+<br><strong>Enhancement</strong><br>
 <ol>
-
-<li>enhancement: add option to overlap the timebar with the smokeview scene.  
+<li>add option to overlap the timebar with the smokeview scene.  
 This option is activated using the display dialog box.
-<li>enhancement: add option to display a horizontal colorbar.  This option is activated by pressing the ',' key.
-<li>enhancement: add option to display user ticks inside the domain
-<li>enhancment: add an option to change the scene aperature by pressing the SHIFT key while moving
+<li>add option to display a horizontal colorbar.  This option is activated by pressing the ',' key.
+<li>add option to display user ticks inside the domain
+<li>add an option to change the scene aperature by pressing the SHIFT key while moving
 the mouse up and down. The '.' key is used to lock left/right motion when moving the mouse so that only the aperture changes.
+</ol>
 
-<li>usability: shorten startup time required to for terrain cases
-<li>usability: improve layout of the render dialog box
+<br><strong>Usability</strong><br>
+<ol>
+<li>shorten startup time required to for terrain cases
+<li>improve layout of the render dialog box
+</ol>
 
-<li>fix: fix problem reading particle files when a case is running (was not reading the entire file)
-<li>fix: fixes to the 360 rendering option
-<li>fix: output boundary data to a sparead sheet file when bounds are set -
+<br><strong>Fixes</strong><br>
+<ol>
+<li>fix problem reading particle files when a case is running (was not reading the entire file)
+<li>fixes to the 360 rendering option
+<li>output boundary data to a sparead sheet file when bounds are set -
 (<a href="https://github.com/firemodels/fds/issues/6446">FDS issue 6446</a>)
-<li>fix: fix problem with multi-slice show/hide menu
-<li>fix: fix 3d smokeview menu when selecting '-' in the 3d smoke menu -
+<li>fix problem with multi-slice show/hide menu
+<li>fix 3d smokeview menu when selecting '-' in the 3d smoke menu -
 (<a href="https://github.com/firemodels/smv/issues/597">Smokeview issue 597</a>)
 </ol>
 
 <p><li>6.6.4 - (build: <a href="https://github.com/firemodels/smv/releases/tag/SMV6.6.4">SMV6.6.4-0-g7331116</a>) May 15, 2018
 
+<br><strong>Usability</strong><br>
 <ol>
-<li>usability: improve 3d smoke dialog layout
-<li> usability: only show immersed geometry dialog box if there is immersed geometry
-<li> usability: obtain header info from .sf files (used to generate slice file menus) if not found in the .smv file (generated by an older version of fds)
-<li> usability: add option to draw a windrose using adjacent device data, 
+<li>improve 3d smoke dialog layout
+<li> only show immersed geometry dialog box if there is immersed geometry
+<li> obtain header info from .sf files (used to generate slice file menus) if not found in the .smv file (generated by an older version of fds)
+<li> add option to draw a windrose using adjacent device data, 
 add windrose start/skip parameters to the ini file
-<li> usability: switch order of slice and vector slice load menu items - 
+<li> switch order of slice and vector slice load menu items - 
 (<a href="https://github.com/firemodels/smv/issues/568">Smokeview issue 568</a>)
-<li> usability: add options to show/hide geometry that is completely outside the domain and show/hide geometry that is partially or completely inside the domain
-<li> usability: add widget for specifying co2 opacity for use with 3d smoke
+<li> add options to show/hide geometry that is completely outside the domain and show/hide geometry that is partially or completely inside the domain
+<li> add widget for specifying co2 opacity for use with 3d smoke
 <li> usabilityi: add smoke3d menu item load all soot/hrrpuv/co2 or soot/temp/co2 3d smoke files
-<li>usability: add a dialog box for specifying boundary geometry file parameters
-<li>usability: improve geometry boundary menus
-<li>usability: output script errors (if any) at end, update script error image
-<li>usability: output error image file if viewpoint does not exist when running a script -
+<li>add a dialog box for specifying boundary geometry file parameters
+<li>improve geometry boundary menus
+<li>output script errors (if any) at end, update script error image
+<li>output error image file if viewpoint does not exist when running a script -
 (<a href="https://github.com/firemodels/smv/issues/536">Smokeview issue 536</a>)
+</ol>
 
-<li>fix: fix problem with missing slice and vector slice file menu entries - 
+<br><strong>Fixes</strong><br>
+<ol>
+<li>fix problem with missing slice and vector slice file menu entries - 
 (<a href="https://github.com/firemodels/smv/issues/572">Smokeview issue 572</a>)
-<li>fix: add missing fclose statements that were causing multiple files to be open
-<li>fix: tighten tolerance used to determine whether two time steps are the same
-<li>fix: fixes to geometry display when there are not any time frames 
+<li>add missing fclose statements that were causing multiple files to be open
+<li>tighten tolerance used to determine whether two time steps are the same
+<li>fixes to geometry display when there are not any time frames 
 (made a change to fds to not output a geometry time frame if the frame doesn't have any vertices or triangles)
-<li> fix: correction to cutcell geometry data loading
-<li> fix: add error checking to prevent subscript out of bound errors when outputting geometry slices
-<li> fix: update the scene and dialog box correctly when the ZAXISANGLES .ini parameter is read in
+<li> correction to cutcell geometry data loading
+<li> add error checking to prevent subscript out of bound errors when outputting geometry slices
+<li> update the scene and dialog box correctly when the ZAXISANGLES .ini parameter is read in
 (<a href="https://github.com/firemodels/smv/issues/552">Smokeview issue 552</a>)
-<li> fix: fix problem with RENDERALL script command -
+<li> fix problem with RENDERALL script command -
 (<a href="https://github.com/firemodels/fds/issues/6172">FDS issue 6172</a>)
-<li> fix: fix thouse5 smokeview script to use new soot labels in .smv file
-<li> fix: corrections to dialog box for specifying scene orientation -
+<li> fix thouse5 smokeview script to use new soot labels in .smv file
+<li> corrections to dialog box for specifying scene orientation -
 (<a href="https://github.com/firemodels/smv/issues/552">Smokeview issue 552</a>)
-<li> fix: fix typo in direction vector labels
+<li> fix typo in direction vector labels
 a4c45c1 smv vv: test smokebot
-<li> fix: fix problem with slice menus for U-VEL, V-VEL and W-VEL quantities -
+<li> fix problem with slice menus for U-VEL, V-VEL and W-VEL quantities -
 (<a href="https://github.com/firemodels/smv/issues/544">Smokeview issue 544</a>)
-<li> fix: bug fixes and code cleanup for immersed boundary/slice dialog box
-<li>fix: corrections to clipping portion of merge/rendering routine
-<li>fix: correct logic in routine that checks for file existence
+<li> bug fixes and code cleanup for immersed boundary/slice dialog box
+<li>corrections to clipping portion of merge/rendering routine
+<li>correct logic in routine that checks for file existence
 </ol>
 
 <p><li>6.6.3 - (build: <a href="https://github.com/firemodels/smv/releases/tag/SMV6.6.3">SMV6.6.3-0-gc63bf29</a>) February 23, 2018
