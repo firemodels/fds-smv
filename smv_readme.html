@@ -23,9 +23,14 @@
 <!--
     comment
 
-<p><li>6.7.19 - (build: <a href="https://github.com/firemodels/smv/releases/tag/SMV6.7.19"> SMV6.7.19-0-gxxxx-release</a>) Mar 12, 2022
+<p><li>6.7.19 - (build: <a href="https://github.com/firemodels/smv/releases/tag/SMV6.7.19"> SMV6.7.19-0-gxxxx-release</a>) April 2, 2022
 
-<br><strong>Usability</strong><br>
+<br><strong>Enhancements</strong><br>
+<ol>
+<li>add option to display 2D plots of slice file data (regular slices not geometry slices)
+</ol>
+
+<strong>Usability</strong><br>
 <ol>
 <li>parallelize 3D smoke input
 <li>don't show terrain and OBSTs at the same time
@@ -41,6 +46,8 @@
 
 <strong>Fixes</strong><br>
 <ol>
+<li>fix colorbar display when segmented display is used
+<li>fix to -help and -help_all command line options
 <li>improve the strategy for which part of an agl terrain slice and terrain vector slice to show
 <li>make vector slice file unloading more efficient
 <li>draw blockages if boundary files are not drawn due to time bounds parameters
