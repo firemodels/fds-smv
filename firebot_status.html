@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html><head><title>Firebot Build Status</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
-      google.charts.load('current', {'packages':['corechart']});
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+  google.charts.load('current', {'packages':['corechart']});
       google.charts.setOnLoadCallback(drawChart);
 
       function drawChart() {
         var data = google.visualization.arrayToDataTable([
           ['Days since Jan 1, 2016', 'Benchmark Time (s)'],
-[2281.62905,11454.800],
 [2282.72869,11603.800],
 [2283.60070,11395.400],
 [2285.61623,11716.400],
@@ -39,6 +38,7 @@
 [2314.85108,12457.000],
 [2315.33001,12445.900],
 [2315.47534,12490.700],
+[2316.64707,9777.100],
         ]);
 
         var options = {
@@ -56,29 +56,70 @@
 
         chart.draw(data, options);
       }
-    </script>
+      google.charts.setOnLoadCallback(drawHistogram);
 
+      function drawHistogram() {
+        var data = google.visualization.arrayToDataTable([
+          ['relative time difference'],
+        ]);
+
+        var options = {
+          title: '',
+          curveType: 'line',
+          legend: { position: 'right' },
+          colors: ['black'],
+          pointSize: 5,
+          hAxis:{ title: 'relative CPU time difference (%)'},
+        };
+        options.legend = 'none';
+
+        var chart = new google.visualization.Histogram(document.getElementById('hist_chart'));
+
+        chart.draw(data, options);
+      }
+
+</script>
 </head>
 <body>
 <h2>Firebot Summary</h2>
 <hr align='left'>
-<h3>Status - Thu May  5 05:16:24 EDT 2022</h3>
-<font color="#00FF00"> Build success!</font><br>
-<a href="https://github.com/firemodels/fds/commit/bb5664af6c2053b0f27a803d06f3acdebaee29d4">FDS Revision: FDS6.7.7-1076-gbb5664af6 </a><br>
-FDS Revision date: Wed May 4 12:24:30 2022<br>
-<a href="https://github.com/firemodels/smv/commit/9e40e2098d516415754d4df20b48f5d11d03a57c">SMV Revision: SMV6.7.18-667-g9e40e2098 </a><br>
-Benchmark time: 12490.700 s <br>
+<h3>Status - Fri May  6 05:26:56 EDT 2022</h3>
+<font color="#FF00FF"> Build success with warnings</font><br>
+<a href="https://github.com/firemodels/fds/commit/af15c8860b5f905a32b6a6bdd2cfad5f60c4268d">FDS Revision: FDS6.7.7-1082-gaf15c8860 </a><br>
+FDS Revision date: Thu May 5 16:31:47 2022<br>
+<a href="https://github.com/firemodels/smv/commit/45d61c2727dd7e7caae1f066a3ef2b420bb03b7d">SMV Revision: SMV6.7.18-669-g45d61c272 </a><br>
+Benchmark time: 9777.100 s <br>
 Host: blaze <br>
 <h3>Timing History</h3>
 
 <div id="curve_chart" style="width: 500px; height: 300px"></div>
-Mean: 11756 s <br>
-Standard deviation: 564.2 s (4.8 %) <br>
+Mean: 11700 s <br>
+Standard deviation: 665.3 s (5.7 %) <br>
+
+<h3>Relative CPU Time Difference Distribution</h3>
+<p>Base: <br>
+Current: <br>
+
+<table border=on>
+<caption>Run Time Changes <br>(Run Times > 60 s)</caption>
+<tr><th></th><th>number</th><th>time change (s)</th></tr>
+<tr><th>slower</th><td></td><td></td></tr>
+<tr><th>faster</th><td></td><td>-</td></tr>
+<tr><th>all</th><td></td><td></td></tr>
+</table>
+
+<div id="hist_chart" style="width: 500px; height: 300px"></div>
 <h3>Manuals</h3>
 <a href="http://goo.gl/n1Q3WH">Manuals</a>
 
 <h3>Status History</h3>
 
+<p><font color="#FF00FF"> Build success with warnings</font><br>
+<a href="https://github.com/firemodels/fds/commit/af15c8860b5f905a32b6a6bdd2cfad5f60c4268d">FDS Revision: FDS6.7.7-1082-gaf15c8860 </a><br>
+FDS Revision date: Thu May 5 16:31:47 2022<br>
+<a href="https://github.com/firemodels/smv/commit/45d61c2727dd7e7caae1f066a3ef2b420bb03b7d">SMV Revision: SMV6.7.18-669-g45d61c272 </a><br>
+Benchmark time: 9777.100 s <br>
+Host: blaze <br>
 <p><font color="#00FF00"> Build success!</font><br>
 <a href="https://github.com/firemodels/fds/commit/bb5664af6c2053b0f27a803d06f3acdebaee29d4">FDS Revision: FDS6.7.7-1076-gbb5664af6 </a><br>
 FDS Revision date: Wed May 4 12:24:30 2022<br>
@@ -252,12 +293,6 @@ Host: blaze <br>
 FDS Revision date: Fri Apr 1 18:29:19 2022<br>
 <a href="https://github.com/firemodels/smv/commit/7bbe7fc249b852149d64e0f7e7b34d8e544ecf2e">SMV Revision: SMV6.7.18-586-g7bbe7fc24 </a><br>
 Benchmark time: 11603.800 s <br>
-Host: blaze <br>
-<p><font color="#00FF00"> Build success!</font><br>
-<a href="https://github.com/firemodels/fds/commit/a05a93575fa7a0dd3c84ae3c6a74cf89762d28e3">FDS Revision: FDS6.7.7-792-ga05a93575 </a><br>
-FDS Revision date: Thu Mar 31 16:05:50 2022<br>
-<a href="https://github.com/firemodels/smv/commit/5c171a39f2adec0a5134b1763c6f98e111cf52a9">SMV Revision: SMV6.7.18-583-g5c171a39f </a><br>
-Benchmark time: 11454.800 s <br>
 Host: blaze <br>
 <br><br>
 <hr align='left'><br>
