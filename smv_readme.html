@@ -23,15 +23,17 @@
 <!--
     comment
 
-<p><li>6.7.19 - (build: <a href="https://github.com/firemodels/smv/releases/tag/SMV6.7.19"> SMV6.7.19-0-gxxxx-release</a>) April 2, 2022
+<p><li>6.7.19 - (build: <a href="https://github.com/firemodels/smv/releases/tag/SMV6.7.19"> SMV6.7.19-0-gxxxx-release</a>) May 10, 2022
 
 <br><strong>Enhancements</strong><br>
 <ol>
-<li>add option to display 2D plots of slice file data (regular slices not geometry slices)
+<li>add option to display 2D plots of slice file data
 </ol>
 
 <strong>Usability</strong><br>
 <ol>
+<li>when soot and fire are loaded use soot to set fire opacity
+<li>read hoc and fuel name from the .smv file instead of the .out file
 <li>parallelize 3D smoke input
 <li>don't show terrain and OBSTs at the same time
 <li>add script commands SETSLICEBOUNDS and SETBOUNDBOUNDS for setting slice and boundry file bounds
@@ -46,6 +48,9 @@
 
 <strong>Fixes</strong><br>
 <ol>
+<li>correct length of the file buffer passed to GetOpenFilename
+<li>fix colorbar selection when run from a script -
+(<a href="https://github.com/firemodels/smv/issues/1231">Smokeview issue 1315</a>)
 <li>fix colorbar display when segmented display is used
 <li>fix to -help and -help_all command line options
 <li>improve the strategy for which part of an agl terrain slice and terrain vector slice to show
@@ -652,113 +657,136 @@ a4c45c1 smv vv: test smokebot
 
 <p><li>6.6.3 - (build: <a href="https://github.com/firemodels/smv/releases/tag/SMV6.6.3">SMV6.6.3-0-gc63bf29</a>) February 23, 2018
 
+<br><strong>Usability</strong><br>
 <ol>
-<li>usability: no longer use file modification times to determine if the boundary and slice info files
+<li>no longer use file modification times to determine if the boundary and slice info files
 (now named chid.binfo and chic.sinfo respectively) are out of date.
 FDS will now overwrite these cache files when it runs a case so that Smokeview will automatically
 recreate them when it first runs a case.
 (<a href="https://github.com/firemodels/fds/issues/5969">FDS issue 5969</a>)
-<li>fix: fix problem with showing and hiding of blockages - 
+</ol>
+
+<strong>Fixes</strong><br>
+<ol>
+<li>fix problem with showing and hiding of blockages - 
 (<a href="https://github.com/firemodels/smv/issues/528">Smokeview issue 528</a>)
-<li>fix: corrections to render image option when generating images that are a multiple of the scene image.
+<li>corrections to render image option when generating images that are a multiple of the scene image.
 Improve the layout of the render image dialog box.
 </ol>
 
 <p><li>6.6.2 - (build: <a href="https://github.com/firemodels/smv/releases/tag/SMV6.6.2">SMV6.6.2-1-g97e0403</a>) February 7, 2018
 
+<br><strong>Usability</strong><br>
 <ol>
-<li>usability: add the gravity vector visibility to state .ini file
-<li>usability: add option to automatically flip colorbar (or not) for slice visibility files -
+<li>add the gravity vector visibility to state .ini file
+<li>add option to automatically flip colorbar (or not) for slice visibility files -
 (<a href="https://github.com/firemodels/smv/issues/520">Smokeview issue 520</a>)
-<li>usability: add Load All menu entries to Slice and Vector slice menus - 
+<li>add Load All menu entries to Slice and Vector slice menus - 
 (<a href="https://github.com/firemodels/smv/issues/502">Smokeview issue 502</a>)
-<li>usability: add dialog widgets for specifying vent and slice file display offsets
-<li>usability: add a dialog widget for specifying the time offset -
+<li>add dialog widgets for specifying vent and slice file display offsets
+<li>add a dialog widget for specifying the time offset -
 (<a href="https://github.com/firemodels/fds/issues/5841">FDS issue 5841</a>)
-<li>usability: add option to remove duplicate boundary slices - 
+<li>add option to remove duplicate boundary slices - 
 (<a href="https://github.com/firemodels/smv/issues/486">Smokeview issue 486</a>)
-<li>usability: show slices in solid and gas by default when 3d heat transfer is active -
+<li>show slices in solid and gas by default when 3d heat transfer is active -
 (<a href="https://github.com/firemodels/fds/issues/5782">FDS issue 5782</a>)
+<li>swap shortcut keys u and U for doing a full or incremental load (u now does a full reload)
+</ol>
 
-<li>fix: corrections to logic coloring data when reloading boundary files -
+<strong>Fixes</strong><br>
+<ol>
+<li>corrections to logic coloring data when reloading boundary files -
 (<a href="https://github.com/firemodels/fds/issues/5932">FDS issue 5932</a>)
-<li>fix: fix menu initialization logic for when there are missing slice files -
+<li>fix menu initialization logic for when there are missing slice files -
 (<a href="https://github.com/firemodels/smv/issues/519">Smokeview issue 519</a>)
-<li>fix: fix problem that occurs when the smokeview window is shrunk to a zero width or height
-<li>usability: swap shortcut keys u and U for doing a full or incremental load (u now does a full reload)
-<li> fix: fix cell centered slice and vector slice display for 3d slice files -
+<li>fix problem that occurs when the smokeview window is shrunk to a zero width or height
+<li>fix cell centered slice and vector slice display for 3d slice files -
 (<a href="https://github.com/firemodels/smv/issues/513">Smokeview issue 513</a>)
-<li>fix : fix ALT d short cut for opening the display dialog box -
+<li>fix ALT d short cut for opening the display dialog box -
 (<a href="https://github.com/firemodels/fds/issues/5945">FDS issue 5945</a>)
-<li>fix: improve display of multiple slice files (remove visual artifacts by improve slice file sorting) -
+<li>improve display of multiple slice files (remove visual artifacts by improve slice file sorting) -
 (<a href="https://github.com/firemodels/smv/issues/513">Smokeview issue 511</a>)
-<li>fix: prevent a division by zero when computing the scene's aspect ratio
-<li>fix: update slice file bounds when changing whether the slice file is visible within a solid or not  -
+<li>prevent a division by zero when computing the scene's aspect ratio
+<li>update slice file bounds when changing whether the slice file is visible within a solid or not  -
 (<a href="https://github.com/firemodels/smv/issues/488">Smokeview issue 488</a>)
-<li>fix: turn off smoke culling on the mac, was  causing crashes
+<li>turn off smoke culling on the mac, was  causing crashes
 </ol>
 
 <p><li>6.6.1 - (build: <a href="https://github.com/firemodels/smv/releases/tag/SMV6.6.1">SMV6.6.1-2-gcee0e5d</a>) November 29, 2017
 
+<br><strong>Enhancemments</strong><br>
 <ol>
-<li>enhancement: add an option for loading slice, boundary and 3d smoke files incrementally (only those time steps that are
+<li>add an option for loading slice, boundary and 3d smoke files incrementally (only those time steps that are
 new since the last time a load has occurred)
-<li>enhancement: add option to edit colorbar by selecting and moving nodes in colorbar path
-<li>enhancement: add MOV (quicktime) to possible movie file types
+<li>add option to edit colorbar by selecting and moving nodes in colorbar path
+<li>add MOV (quicktime) to possible movie file types
+</ol>
 
-<li>usability: add  option to reverse tour path
-<li>usability: add option for specifying immersed geometry line width
-<li>usability: improve layout of touring dialog box, add Button for copying an existing tour, eliminate relative view direction widgets
-<li>usability: implement DEL key when editing text a dialog box
-<li>usability: add quicktime compatibility option to all platforms (not just on the Mac), if quicktime compatibility is set then only allow creation of mp4 files (only ones supported by quicktime)
+<strong>Usability</strong><br>
+<ol>
+<li>add  option to reverse tour path
+<li>add option for specifying immersed geometry line width
+<li>improve layout of touring dialog box, add Button for copying an existing tour, eliminate relative view direction widgets
+<li>implement DEL key when editing text a dialog box
+<li>add quicktime compatibility option to all platforms (not just on the Mac), if quicktime compatibility is set then only allow creation of mp4 files (only ones supported by quicktime)
+</ol>
 
-<li> fix: fix problem with defining scratch directory -
+<strong>Fixes</strong><br>
+<ol>
+<li> fix problem with defining scratch directory -
 (<a href="https://github.com/firemodels/fds/issues/5736">FDS issue 5736</a>)
-<li>fix: fix problem causing memory overrun
-<li>fix: fix problem with toggling CAD mode with 'q' key -
+<li>fix problem causing memory overrun
+<li>fix problem with toggling CAD mode with 'q' key -
 (<a href="https://github.com/firemodels/smv/issues/472">Smokeview issue 472</a>)
-<li>fix: fix scene rotation when using scaling - addresses FDS issue 5681
+<li>fix scene rotation when using scaling - addresses FDS issue 5681
 (<a href="https://github.com/firemodels/fds/issues/5681">FDS issue 5681</a>)
-<li>fix: correct offset distances used to display of boundary file -
+<li>correct offset distances used to display of boundary file -
 (<a href="https://github.com/firemodels/fds/issues/5679">FDS issue 5679</a>)
-<li>fix: fix problem when number of isosurfaces is less than the number of meshes
-<li>fix: prevent divsion by 0 when leveling scene with '~' key
+<li>fix problem when number of isosurfaces is less than the number of meshes
+<li>prevent divsion by 0 when leveling scene with '~' key
 </ol>
 
 <p><li>6.6.0 - (build: <a href="https://github.com/firemodels/smv/releases/tag/SMV6.6.0">SMV6.6.0-7-g28a3d96</a>) October 31, 2017
 
+<br><strong>Enhancemments</strong><br>
 <ol>
-<li>enhancement: add a colorbar named 'fire 3' for representing more realistic fire colors
-<li>enhancement: add option to distribute colorbar nodes uniformly
+<li>add a colorbar named 'fire 3' for representing more realistic fire colors
+<li>add option to distribute colorbar nodes uniformly
 <li>enhancment:  add a  utility named env2mod for creating environment modules  from Linux or OSX  bash scripts
+</ol>
 
-<li>usability: add option to display all 3d slice files for visualizing fire and smoke
-<li>usability: hide hrrpuv cutoff label by default
-<li>usability: add Settings menu items that point to various dialog boxes
-<li>usability: hide hrrpuv cutoff label by default
-<li>usability: add option to lock volume rendering smoke visuliazation when moving scene
-<li>usability: place Mesh Load/Unload  and Show/Hide menu items into separate sub-menus to make  visualization
+<strong>Usability</strong><br>
+<ol>
+<li>add option to display all 3d slice files for visualizing fire and smoke
+<li>hide hrrpuv cutoff label by default
+<li>add Settings menu items that point to various dialog boxes
+<li>hide hrrpuv cutoff label by default
+<li>add option to lock volume rendering smoke visuliazation when moving scene
+<li>place Mesh Load/Unload  and Show/Hide menu items into separate sub-menus to make  visualization
 of large cases easier
-<li>usability: add a dialog box for specifying time and frame number for loading volume rendered smoke/fire
-<li>usability: prevent frame location from resetting when making frame location visible
-<li>usability: make fire transparency widget available for all fire types -
+<li>add a dialog box for specifying time and frame number for loading volume rendered smoke/fire
+<li>prevent frame location from resetting when making frame location visible
+<li>make fire transparency widget available for all fire types -
 (<a href="https://github.com/firemodels/smv/issues/424">Smokeview issue 424</a>)
-<li>usability: add a colorbar named cool  for visualizing fire
+<li>add a colorbar named cool  for visualizing fire
+</ol>
 
-<li>fix: fix timebar drag when a title safe area is added to the screen -
+<strong>Fixes</strong><br>
+<ol>
+<li>fix timebar drag when a title safe area is added to the screen -
 (<a href="https://github.com/firemodels/fds/issues/5613">FDS issue 5613</a>)
-<li>fix: fix help display for antialias shortcut -
+<li>fix help display for antialias shortcut -
 (<a href="https://github.com/firemodels/fds/issues/5585">FDS issue 5585</a>)
-<li>fix: corrections to 3d smoke file compression in smokezip and display in smokeview
-<li>fix: correction to timebar drag region when a title safe area is selected
+<li>corrections to 3d smoke file compression in smokezip and display in smokeview
+<li>correction to timebar drag region when a title safe area is selected
 (<a href="https://github.com/firemodels/fds/issues/5613">FDS issue 5613</a>)
-<li>fix: add error checking when drawing boundary files -
+<li>add error checking when drawing boundary files -
 (<a href="https://github.com/firemodels/fds/issues/5497">FDS issue 5497</a>)
-<li>fix: corrections to vol render initialization
-<li>fix: correct rounding computation for tick label display when numbers are negative -
+<li>corrections to vol render initialization
+<li>correct rounding computation for tick label display when numbers are negative -
 (<a href="https://github.com/firemodels/fds/issues/5532">FDS issue 5532</a>)
-<li>fix: corrections to rendering code
-<li>fix:  correct RENDERDOUBLEONCE script keyword so that it outputs to the directory specified by the RENDERDIR script keyword -
+<li>corrections to rendering code
+<li> correct RENDERDOUBLEONCE script keyword so that it outputs to the directory specified by the RENDERDIR script keyword -
 (<a href="https://github.com/firemodels/fds/issues/4441">FDS issue 4441</a>)
 </ol>
 
