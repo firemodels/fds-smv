@@ -25,27 +25,28 @@
 
 <ul>
 <!--
-<p><li>6.7.22 - (build: <a href="https://github.com/firemodels/smv/releases/tag/SMV6.7.22"> SMV6.7.22-0-gxxxx-release</a>) Apr 13, 2023
+<p><li>6.7.22 - (build: <a href="https://github.com/firemodels/smv/releases/tag/SMV6.7.22"> SMV6.7.22-0-gxxxx-release</a>) Apr 14, 2023
 
 <br><strong>Usability</strong><br>
 <ol>
 <li>add option to pause tour at a keyframe
-<li>add option to  generate 2D plots using slice file data averaged over a time interval and a region
+<li>add option to  generate 2D plots using slice file data averaged over a time interval and/or a region
 <li>speed up startup by reading csv data in the background
 <li>add option to generate 2D plots of CFAST csv data
 <li>add option to output 2D slice data to a csv file
 <li>add script commands for showing/hiding devices
 <li>add next/previous buttons to a colorbar dialog box
-<li>use floating for drawing slice, boundary, PLOT3D and particle colors
-to improve efficiency when bounds change
-<li>remove slice file artifacts drawing when slices intersect
-<li>show blockage outlines at fds inputt file locations if 'q' key was toggled to fds location
+<li>speed up slice, boundary, PLOT3D and particle color changes when bounds change by keeping caching data
+<li>remove slice file drawing artifacts when slices intersect
+<li>show blockage outlines at fds input file locations if 'q' key was toggled to fds location
 <li>add keyboard shortcuts for manipulating clipping planes
 <li>add <CTRL> <HOME> keyboard shortcut for selecting a dialog box field
-<li>add option to override 3D smoke file cutoffs, output max 3D smoke/fire values found
+<li>add option to override 3D smoke file cutoffs
+<li>output max 3D smoke/fire values found
 </ol>
 <strong>Fixes</strong>
 <ol>
+<li>fix menu version of 'q' keyboard shortcut
 <li>draw slice outlines and vertices using foreground color if solid shading is also drawn to improve visibility
 <li>fix problem with outlines showing up in slicefiles
 <li>fix when loading multiple slices (set colors on each call)
@@ -59,7 +60,7 @@ to improve efficiency when bounds change
 <li>fix problem with show/hide slice menus
 <li>fix to particle object drawing when using floating point color indices
 <li>fix to cfast vent display
-<li>use clipping planes storerd with view points unless clipping planes are currently defined
+<li>use clipping planes stored with view points unless clipping planes are currently defined
 </ol>
 -->
 
