@@ -9,7 +9,6 @@
       function drawChart() {
         var data = google.visualization.arrayToDataTable([
           ['Days since Jan 1, 2016', 'Benchmark Time (s)'],
-[2541.90677,1947.300],
 [2543.66994,1972.400],
 [2545.85996,1953.600],
 [2546.36090,1907.300],
@@ -39,6 +38,7 @@
 [2652.88534,1952.400],
 [2657.85215,2028.800],
 [2659.80298,1979.600],
+[2660.63381,2047.600],
         ]);
 
         var options = {
@@ -62,22 +62,27 @@
 <body>
 <h2>Smokebot Summary</h2>
 <hr align='left'>
-<h3>Status - Fri Apr 14 06:08:38 EDT 2023</h3>
-<font color="#FF00FF"> Build success with warnings</font><br>
-<a href="https://github.com/firemodels/smv/commit/5307501c1f2b29eb7a0046b342ecc6a6c1bb575e">Revision: SMV6.7.21-1191-g5307501</a><br>
-Revision date: Thu Apr 13 20:16:18 2023<br>
-Benchmark time: 1979.600 s <br>
+<h3>Status - Sat Apr 15 06:14:12 EDT 2023</h3>
+<font color="#FF0000"> Build failure</font><br>
+<a href="https://github.com/firemodels/smv/commit/0ff17caa025c08324b55e9ce11a0a1fa797c84d2">Revision: SMV6.7.21-1203-g0ff17ca</a><br>
+Revision date: Fri Apr 14 16:12:42 2023<br>
+Benchmark time: 2047.600 s <br>
 Host: blaze <br>
 <h3>Timing History</h3>
 
 <div id="curve_chart" style="width: 500px; height: 300px"></div>
-Mean: 1890 s <br>
-Standard deviation: 95.5 s (5.1 %) <br>
+Mean: 1893 s <br>
+Standard deviation: 99.1 s (5.2 %) <br>
 <h3>Manuals</h3>
 <a href="http://goo.gl/n1Q3WH">Manuals</a>
 
 <h3>Status History</h3>
 
+<p><font color="#FF0000"> Build failure</font><br>
+<a href="https://github.com/firemodels/smv/commit/0ff17caa025c08324b55e9ce11a0a1fa797c84d2">Revision: SMV6.7.21-1203-g0ff17ca</a><br>
+Revision date: Fri Apr 14 16:12:42 2023<br>
+Benchmark time: 2047.600 s <br>
+Host: blaze <br>
 <p><font color="#FF00FF"> Build success with warnings</font><br>
 <a href="https://github.com/firemodels/smv/commit/5307501c1f2b29eb7a0046b342ecc6a6c1bb575e">Revision: SMV6.7.21-1191-g5307501</a><br>
 Revision date: Thu Apr 13 20:16:18 2023<br>
@@ -222,11 +227,6 @@ Host: blaze <br>
 <a href="https://github.com/firemodels/smv/commit/16f2aee11ef40512a590108e6c796373a39510d8">Revision: SMV6.7.14-531-g16f2aee</a><br>
 Revision date: Sat Jul 18 14:50:10 2020<br>
 Benchmark time: 2070.600 s <br>
-Host: blaze <br>
-<p><font color="#FF0000"> Build failure</font><br>
-<a href="https://github.com/firemodels/smv/commit/6a2226a28c774581466c4e3629e04cda8efd1cb3">Revision: SMV6.7.14-529-g6a2226a</a><br>
-Revision date: Fri Jul 17 17:10:13 2020<br>
-Benchmark time: 2131.700 s <br>
 Host: blaze <br>
 <br><br>
 <hr align='left'><br>
