@@ -19,6 +19,37 @@
 
 <!--
     comment
+<p><li>6.8.1 - (build: <a href="https://github.com/firemodels/smv/releases/tag/SMV-6.8.1"> SMV-6.8.1-0-gxxx-release</a>) July 18, 2023
+
+<br><strong>Enhancements</strong><br>
+<ol>
+</ol>
+<strong>Usability</strong><br>
+<ol>
+<li>use level set colorbar when loading a level set slice
+<li>draw geometry outline with color cyan if grid lines are also drawn
+<li>flip 'fire line (level set)' colorbar
+<li>change default geometry outline offset distance to 0.1*dz where dz is the vertical dimension of a grid cell
+<li>add -large option for large geometry cases - skips some steps when processing geometry
+<li>search for a valid bin directory if smokeview being used is not part of an installation
+<li>add option to output colorbar data in csv format
+<li>add script commands for setting clipping planes, SETCLIPX, SETCLIPY, SETCLIPZ, SETCLIPMODE
+</ol>
+<strong>Fixes</strong>
+<ol>
+<li>don't draw regular outlines and cface outlines at the same time
+<li>speed up slice file loading for last slice
+<li>fix to terrain display for cases with T_END=0.0
+<li>fix smoke color when temperature is less than the critical temperature
+<li>don't draw cfaces and terrain at the same time - 
+(<a href="https://github.com/firemodels/smv/issues/1601">Smokeview issue 1601</a>)
+<li>fix clip plane when used with viewpoints -
+(<a href="https://github.com/firemodels/smv/issues/1600">Smokeview issue 1600</a>)
+<li>fix to boundary file dialog box when geom  boundary files are loaded - 
+(<a href="https://github.com/firemodels/smv/issues/1559">Smokeview issue 1559</a>)
+<li>fix 'u' when boundary files are loaded - addresses smokeview issue 1558
+(<a href="https://github.com/firemodels/smv/issues/1558">Smokeview issue 1558</a>)
+</ol>
 -->
 
 <h3>Release Notes</h3>
