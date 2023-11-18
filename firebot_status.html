@@ -211,256 +211,6 @@
       function drawHistogram() {
         var data = google.visualization.arrayToDataTable([
           ['relative time difference'],
-[0],
-[2],
-[6],
-[8],
-[-22],
-[-21],
-[-21],
-[-27],
-[-34],
-[-23],
-[-20],
-[-36],
-[-38],
-[-26],
-[-39],
-[-15],
-[-9],
-[-8],
-[-36],
-[-20],
-[-4],
-[10],
-[-38],
-[-6],
-[-7],
-[12],
-[0],
-[33],
-[-42],
-[-9],
-[-26],
-[-45],
-[-30],
-[-17],
-[-21],
-[-29],
-[-15],
-[-15],
-[-24],
-[-17],
-[-14],
-[-15],
-[-25],
-[-14],
-[-38],
-[-24],
-[-29],
-[-23],
-[3],
-[27],
-[-14],
-[-20],
-[-12],
-[15],
-[2],
-[-16],
-[9],
-[0],
-[-5],
-[0],
-[-32],
-[12],
-[-14],
-[-28],
-[-22],
-[10],
-[14],
-[-18],
-[-22],
-[-40],
-[-22],
-[-24],
-[-2],
-[-19],
-[-27],
-[-12],
-[-22],
-[-25],
-[-35],
-[-13],
-[-27],
-[-36],
-[-53],
-[-21],
-[-15],
-[5],
-[-7],
-[-10],
-[-21],
-[28],
-[-33],
-[31],
-[-17],
-[51],
-[39],
-[59],
-[-24],
-[12],
-[-23],
-[-25],
-[12],
-[7],
-[5],
-[-1],
-[-27],
-[-33],
-[-41],
-[-16],
-[-40],
-[-40],
-[-50],
-[-44],
-[-41],
-[-24],
-[2],
-[-28],
-[-36],
-[-16],
-[-45],
-[-41],
-[-48],
-[-46],
-[-34],
-[-15],
-[0],
-[12],
-[28],
-[-30],
-[-14],
-[2],
-[-33],
-[-20],
-[-6],
-[-27],
-[-22],
-[-23],
-[-1],
-[-5],
-[-25],
-[-36],
-[7],
-[-16],
-[-41],
-[-30],
-[-19],
-[-34],
-[-12],
-[-9],
-[-3],
-[-8],
-[-21],
-[-22],
-[-14],
-[-23],
-[-26],
-[-11],
-[-16],
-[-15],
-[-13],
-[-20],
-[16],
-[-36],
-[-16],
-[-10],
-[12],
-[-3],
-[-17],
-[-9],
-[-26],
-[-20],
-[-17],
-[26],
-[28],
-[-1],
-[-10],
-[-1],
-[-9],
-[-14],
-[-8],
-[-14],
-[27],
-[9],
-[3],
-[6],
-[-2],
-[-2],
-[3],
-[-29],
-[1],
-[-18],
-[-9],
-[-24],
-[0],
-[-29],
-[5],
-[-25],
-[-15],
-[-13],
-[-7],
-[-20],
-[-28],
-[-20],
-[-23],
-[7],
-[-30],
-[-26],
-[-26],
-[-34],
-[-26],
-[-4],
-[-12],
-[17],
-[15],
-[-2],
-[-1],
-[-3],
-[9],
-[1],
-[11],
-[-2],
-[4],
-[-12],
-[26],
-[3],
-[1],
-[-2],
-[11],
-[11],
-[-8],
-[-6],
-[-32],
-[-16],
-[-11],
-[-18],
-[-16],
-[-17],
-[-30],
-[-31],
-[-19],
-[-10],
-[-13],
-[0],
-[-20],
-[-5],
-[-3],
-[-3],
-[-32],
-[0],
-[-3],
-[-15],
         ]);
 
         var options = {
@@ -486,12 +236,11 @@
 <body>
 <h2>Firebot Summary</h2>
 <hr align='left'>
-<h3>Status - Fri Nov 17 05:19:11 EST 2023</h3>
-<font color="#FF00FF"> Build success with warnings</font><br>
-<a href="https://github.com/firemodels/fds/commit/b4ba6637ad8704646e7763ba5df068aa506a141b">FDS Revision: FDS-6.8.0-956-gb4ba663 </a><br>
-FDS Revision date: Thu Nov 16 11:54:40 2023<br>
-<a href="https://github.com/firemodels/smv/commit/c1622eef47d1d49a823ddb3cdef69bafa41424c9">SMV Revision: SMV-6.8.0-1344-gc1622ee </a><br>
-Benchmark time: 9849.100 s <br>
+<h3>Status - Sat Nov 18 02:39:25 EST 2023</h3>
+<font color="#FF0000"> Build failure and warnings</font><br>
+<a href="https://github.com/firemodels/fds/commit/035852dcf097d61a1ac9dd52ddad6dbd130c2a19">FDS Revision: FDS-6.8.0-962-g035852d </a><br>
+FDS Revision date: Fri Nov 17 13:39:40 2023<br>
+<a href="https://github.com/firemodels/smv/commit/aca7343479a8443e7ec8068709340f9129ac0164">SMV Revision: SMV-6.8.0-1365-gaca7343 </a><br>
 Host: blaze <br>
 <h3>Time History</h3>
 
@@ -500,14 +249,14 @@ Mean: 186852 s <br>
 
 <h3>Time Differences</h3>
 <p>Base: FDS6.7.9-1968-g3b1d1ef<br>
-Current: FDS-6.8.0-956-gb4ba663<br>
+Current: FDS-6.8.0-962-g035852d<br>
 
 <table border=on>
 <caption>Run Time Changes <br>(Run Times > 60 s)</caption>
 <tr><th></th><th>number</th><th>time change (s)</th></tr>
-<tr><th>slower</th><td>56</td><td>4952.96</td></tr>
-<tr><th>faster</th><td>194</td><td>-24308.98</td></tr>
-<tr><th>all</th><td>250</td><td>-19356.02</td></tr>
+<tr><th>slower</th><td>0</td><td>0.0</td></tr>
+<tr><th>faster</th><td>0</td><td>-0.0</td></tr>
+<tr><th>all</th><td>0</td><td>0</td></tr>
 </table>
 
 <div id="hist_chart" style="width: 500px; height: 300px"></div>
@@ -516,6 +265,11 @@ Current: FDS-6.8.0-956-gb4ba663<br>
 
 <h3>Status History</h3>
 
+<p><font color="#FF0000"> Build failure and warnings</font><br>
+<a href="https://github.com/firemodels/fds/commit/035852dcf097d61a1ac9dd52ddad6dbd130c2a19">FDS Revision: FDS-6.8.0-962-g035852d </a><br>
+FDS Revision date: Fri Nov 17 13:39:40 2023<br>
+<a href="https://github.com/firemodels/smv/commit/aca7343479a8443e7ec8068709340f9129ac0164">SMV Revision: SMV-6.8.0-1365-gaca7343 </a><br>
+Host: blaze <br>
 <p><font color="#FF00FF"> Build success with warnings</font><br>
 <a href="https://github.com/firemodels/fds/commit/b4ba6637ad8704646e7763ba5df068aa506a141b">FDS Revision: FDS-6.8.0-956-gb4ba663 </a><br>
 FDS Revision date: Thu Nov 16 11:54:40 2023<br>
@@ -1589,12 +1343,6 @@ Host: blaze <br>
 FDS Revision date: Fri Mar 3 17:40:13 2023<br>
 <a href="https://github.com/firemodels/smv/commit/8c67d599fd8cfb7c82a6a1d2a73f8211b616eb93">SMV Revision: SMV6.7.21-1067-g8c67d599f </a><br>
 Benchmark time: 9145.200 s <br>
-Host: blaze <br>
-<p><font color="#00FF00"> Build success!</font><br>
-<a href="https://github.com/firemodels/fds/commit/744e243950f90874379890b23da1d21a77418d5d">FDS Revision: FDS6.7.9-1705-g744e24395 </a><br>
-FDS Revision date: Thu Mar 2 17:56:27 2023<br>
-<a href="https://github.com/firemodels/smv/commit/8c67d599fd8cfb7c82a6a1d2a73f8211b616eb93">SMV Revision: SMV6.7.21-1067-g8c67d599f </a><br>
-Benchmark time: 9213.500 s <br>
 Host: blaze <br>
 <br><br>
 <hr align='left'><br>
