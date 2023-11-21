@@ -19,13 +19,17 @@
 
 <!--
     comment
-<p><li>6.8.1 - (build: <a href="https://github.com/firemodels/smv/releases/tag/SMV-6.8.1"> SMV-6.8.1-0-gxxx-release</a>) July 27, 2023
+<p><li>6.8.1 - (build: <a href="https://github.com/firemodels/smv/releases/tag/SMV-6.8.1"> SMV-6.8.1-0-gxxx-release</a>) Nov 21, 2023
+
 
 <br><strong>Enhancements</strong><br>
 <ol>
+<li>add smokeview script keyword, LOADSMOKERENDER, to render smoke files given a start frame and skip frame amount
 </ol>
 <strong>Usability</strong><br>
 <ol>
+<li>streamline bounds dialog box
+<li>add ZLIB labels to boundary, slice and 3d smoke files when these files are compressed
 <li>use level set colorbar when loading a level set slice
 <li>draw geometry outline with color cyan if grid lines are also drawn
 <li>flip 'fire line (level set)' colorbar
@@ -37,6 +41,8 @@
 </ol>
 <strong>Fixes</strong>
 <ol>
+<li>change vent offset to improve display
+<li>fix to LOADPARTICLES script command
 <li>fix to particle loading from a script
 <li>don't draw regular outlines and cface outlines at the same time
 <li>speed up slice file loading for last slice
