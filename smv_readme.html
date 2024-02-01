@@ -19,7 +19,7 @@
 
 <!--
     comment
-<p><li>6.8.1 - (build: <a href="https://github.com/firemodels/smv/releases/tag/SMV-6.8.1"> SMV-6.8.1-0-gxxx-release</a>) Nov 21, 2023
+<p><li>6.8.1 - (build: <a href="https://github.com/firemodels/smv/releases/tag/SMV-6.8.1"> SMV-6.8.1-0-gxxx-release</a>) Feb 1, 2024
 
 
 <br><strong>Enhancements</strong><br>
@@ -28,6 +28,8 @@
 </ol>
 <strong>Usability</strong><br>
 <ol>
+<li>overhaul bound computation routines to allow .bnd files to be consolidated into one .gbnd file 
+<li>add GPUOFF script keyword for turning off GPU
 <li>streamline bounds dialog box
 <li>add ZLIB labels to boundary, slice and 3d smoke files when these files are compressed
 <li>use level set colorbar when loading a level set slice
@@ -41,6 +43,14 @@
 </ol>
 <strong>Fixes</strong>
 <ol>
+<li> fix plot3d isosurface colorbar labels
+<li>fix typo in cell centered slice vector drawing routine -
+(<a href="https://github.com/firemodels/fds/issues/12396">FDS issue 12396</a>)
+<li>fix to loading boundary files when min/max's are set in the .ini file
+<li>fix to various output file display for cases with restart files
+<li>correct blockage visibilty when displaying a boundary file and hiding mesh data
+<li>swap $ and ALT $ shortcuts
+<li>fix various problems identified by Intel sanitize option
 <li>change vent offset to improve display
 <li>fix to LOADPARTICLES script command
 <li>fix to particle loading from a script
