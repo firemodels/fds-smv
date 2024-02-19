@@ -19,7 +19,7 @@
 
 <!--
     comment
-<p><li>6.8.1 - (build: <a href="https://github.com/firemodels/smv/releases/tag/SMV-6.8.1"> SMV-6.8.1-0-gxxx-release</a>) Feb 1, 2024
+<p><li>6.9.0 - (build: <a href="https://github.com/firemodels/smv/releases/tag/SMV-6.8.1"> SMV-6.8.1-0-gxxx-release</a>) Feb 19, 2024
 
 
 <br><strong>Enhancements</strong><br>
@@ -28,6 +28,7 @@
 </ol>
 <strong>Usability</strong><br>
 <ol>
+<li>remove menus for loading all x, y, z slice files - add dialog for loading all x, y, z slice files
 <li>overhaul bound computation routines to allow .bnd files to be consolidated into one .gbnd file 
 <li>add GPUOFF script keyword for turning off GPU
 <li>streamline bounds dialog box
@@ -43,6 +44,8 @@
 </ol>
 <strong>Fixes</strong>
 <ol>
+<li>fix to geometry boundary file display if a boundary file does not exist
+(<a href="https://github.com/firemodels/smv/issues/1804">Smokeview issue 1804</a>)
 <li> fix plot3d isosurface colorbar labels
 <li>fix typo in cell centered slice vector drawing routine -
 (<a href="https://github.com/firemodels/fds/issues/12396">FDS issue 12396</a>)
