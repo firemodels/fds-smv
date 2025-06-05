@@ -30,21 +30,21 @@
 <strong>Usability</strong>
 <ol>
 <li>add error messages and abort smokeview if vent coordinates are out of bounds
-<li>look for .csv files in the directory defined by the FDS input file RESULTS_DIR keyword
+<li>look for .csv files in the directory defined by the the FDS input file RESULTS_DIR keyword
 <li>allow sub-directories when handling RESULTS_DIR
-<li>output .gbnd files to the results directory (as created by fds)
+<li>output .gbnd files to the results directory (as created by FDS)
 <li>make 'q' state and drawing cfaces state consistent
 <li>hide the geometry and draw an outline when moving the scene if there are more than 250,000 cface triangles
 </ol>
 <strong>Fixes</strong>
 <ol>
-<li>fix boundary file offset for terrain cases
+<li>fix the boundary file offset for terrain cases
 <li>fix to orthographic obst drawing - 
 (<a href="https://github.com/firemodels/smv/issues/2305">Smokeview issue 2305</a>)
-<li>fix crash smokeview is invokded without an input file on a Linux or Mac computer
+<li>fix crash when smokeview is invokded without an input file on a Linux or Mac computer
 <li>fix unit conversions for the horizontal colorbar
 <li>fix to boundary file display when case has disapearring blockages on mesh boundaries
-<li>fix reload option ('u' keyboard shortcut) - particles were disapearring when 'u' was pressed
+<li>fix reload option ('u' keyboard shortcut) - particles were disappearing when 'u' was pressed
 <li>correction to 3D temperature fire display
 <li>remove duplicate colorbars in menu and dialogs
 </ol>
