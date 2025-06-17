@@ -30,7 +30,8 @@
 <br>
 <strong>Usability</strong>
 <ol>
-<li>scale slice vectors by vertical scene dimemsion not maximum scene side dimension
+<li>scale slice vectors using min(dx,dy,dz) for 3D cases and min(dx,dz) for 2D cases
+where dx, dy and dz are the scene side lengths.
 <li>add LOADHVAC script keyword for loading hvac values
 <li>output an error message and abort smokeview if vent coordinates are out of bounds
 <li>look for .csv files in the directory defined by the the FDS input file RESULTS_DIR keyword
