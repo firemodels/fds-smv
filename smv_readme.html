@@ -25,11 +25,13 @@
     comment
 -->
 
-<p><li>6.10.2 - (build: <a href="https://github.com/firemodels/smv/releases/tag/SMV-6.10.2"> SMV-6.10.2-0-gxxxx-release</a>) June xx, 2025
+<p><li>6.10.2 - (build: <a href="https://github.com/firemodels/smv/releases/tag/SMV-6.10.2"> SMV-6.10.2-0-gxxxx-release</a>) June 17xx, 2025
 
 <br>
 <strong>Usability</strong>
 <ol>
+<li>scale slice vectors by vertical scene dimemsion not maximum scene side dimension
+<li>add LOADHVAC script keyword for loading hvac values
 <li>output an error message and abort smokeview if vent coordinates are out of bounds
 <li>look for .csv files in the directory defined by the the FDS input file RESULTS_DIR keyword
 <li>allow sub-directories when handling RESULTS_DIR
@@ -39,6 +41,8 @@
 </ol>
 <strong>Fixes</strong>
 <ol>
+<li>fix HVAC duct val display - 
+(<a href="https://github.com/firemodels/smv/issues/2309">Smokeview issue 2309</a>)
 <li>fix the boundary file offset for terrain cases
 <li>fix to orthographic OBST drawing - 
 (<a href="https://github.com/firemodels/smv/issues/2305">Smokeview issue 2305</a>)
