@@ -21,10 +21,11 @@
 <ul>
 <!--
     comment
-<p><li>6.10.7 - (build: <a href="https://github.com/firemodels/smv/releases/tag/SMV-6.10.6">SMV-6.10.6-0-gxxxxx-release</a>) February 7, 2026
+<p><li>6.10.7 - (build: <a href="https://github.com/firemodels/smv/releases/tag/SMV-6.10.6">SMV-6.10.6-0-gxxxxx-release</a>) March 4, 2026
 
 <br><strong>Enhancements</strong>
 <ol>
+<li>add option to visualize vector slice files using CELL U/V/W slice quantities
 </ol>
 
 <br><strong>Usability</strong>
@@ -35,6 +36,11 @@ l/ALT l short cuts for increasing/decreasing smoke opacity (L also decreases smo
 
 <br><strong>Fixes</strong>
 <ol>
+<li>fix problem when unloading vector slice files
+<li>improve hvac node buffer memory allocation
+<li>correction to circular vent offset
+<li>correct l/L shortcut for chaning 3D smoke opacity
+<li>fix to user tick display tickmin component is less than corresponding tick origin component
 <li>correct hrrpuv opacity computation - 
 (<a href="https://github.com/firemodels/smv/issues/2537">Smokeview issue 2537</a>)
 <li>fix problem with mesh bound initialization that was causing smokeview to crash
