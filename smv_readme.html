@@ -22,15 +22,11 @@
 <!--
     comment
 
-<p><li>6.10.7 - (build: <a href="https://github.com/firemodels/smv/releases/tag/SMV-6.10.6">SMV-6.10.6-0-gxxxxx-release</a>) March 30, 2026
-
-<br><strong>Enhancements</strong>
-<ol>
-<li>add option to visualize vector slice files using CELL U/V/W slice quantities
-</ol>
+<p><li>6.10.7 - (build: <a href="https://github.com/firemodels/smv/releases/tag/SMV-6.10.6">SMV-6.10.6-0-gxxxxx-release</a>) April 29, 2026
 
 <br><strong>Usability</strong>
 <ol>
+<li>display horizontal mesh faces as one of the 'o' outline options
 <li>generate blanking data structures in the background
 <li>add a widget for setting the time frame
 <li>add f/ALT f short cuts for increasing/decreasing fire opacity (F also decreases fire opacity) and
@@ -39,6 +35,8 @@ l/ALT l short cuts for increasing/decreasing smoke opacity (L also decreases smo
 
 <br><strong>Fixes</strong>
 <ol>
+<li>set compression type to RLE (run length encoding) when reading s3d files rather than using parameter in the file
+<li>fix problem with zone firemodeling vent shading, make it consisent with layer shading
 <li>eliminate duplicate rendering of frame 0
 <li>fix sign error when drawing vector slices
 <li>fix problem when unloading vector slice files
